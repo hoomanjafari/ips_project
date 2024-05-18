@@ -1,0 +1,538 @@
+@import url('/static/Fonts/font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('/static/Css/navbars.css');
+@import url('/static/Css/footer.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.index-white-space {
+    height: 4vw;
+    display: block;
+}
+
+.clr-orange {
+    color: orange;
+}
+
+
+
+/* ------------------------------( header content )---------------------------------------------- */
+
+.index-header {
+    margin-bottom: 9vw;
+}
+
+.index-header-content {
+    height: 46vw;
+    background-image: url('/static/images/header-bg-image.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.index-header-content h1 {
+    width: 50vw;
+    color: white;
+    font-size: 2vw;
+}
+
+
+
+/* -------------------------------( main-content IPS Spaces )------------------------------------------- */
+
+.ips-spaces-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spaces-all-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.ips-spaces-h1 {
+    width: 82%;
+    margin-bottom: 3vw;
+    padding: 1vw 0;
+}
+
+.ips-spaces-h1 h1 {
+    font-size: 2.2vw;
+    color: #363636;
+}
+
+.spaces-box {
+    width: 25vw;
+}
+
+.spaces-box:hover {
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+.spaces-box img {
+    width: 25vw;
+    height: 25vw;
+}
+
+.spaces-box-title {
+    font-size: 2vw;
+    margin: 2vw 0;
+    color: #363636;
+}
+
+.spaces-box-information {
+    font-size: 1.3vw;
+    line-height: 2vw;
+    margin: 2vw 0;
+    color: #777777;
+}
+
+.find-out-more {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: orange;
+}
+
+
+/* -------------------------------( main-content IPS Projects )------------------------------------------- */
+
+.index-projects-container {
+    margin: 9vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.index-projects-h1 {
+    width: 86%;
+    margin-bottom: 3vw;
+    padding: 1vw 0;
+}
+
+
+.title-border {
+    width: 0;
+    height: 3px;
+    background-color: #363636;
+    position: absolute;
+    margin-top: 7px;
+    transition: 0.5s;
+}
+
+.title-mini-border {
+    width: 0;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.index-projects-h1 h1 {
+    font-size: 2.2vw;
+    color: #363636;
+    margin-bottom: 1vw;
+}
+
+.index-projects-all-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.this-mg-right {
+    margin-right: 8vw;
+}
+
+.index-project-box {
+    border: 1px solid orange;
+    border-radius: 0.5vw;
+    padding: 1vw;
+}
+
+.index-project-box img {
+    width: 35vw;
+    height: 20vw;
+}
+
+.index-project-title {
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin: 2vw 0;
+    color: #363636;
+}
+
+.index-project-details {
+    font-size: 2vw;
+    background-color: orange;
+    color: white;
+    padding: 0.5vw 3vw;
+    border-radius: 0.5vw;
+    margin-top: -2vw;
+    margin-left: 2vw;
+    display: block;
+    position: relative;
+    width: fit-content;
+}
+
+.index-project-details:hover {
+    transition: 0.3s;
+    transform: translate(1vw);
+}
+
+
+/* -------------------------------( main-content Contact Us )------------------------------------------- */
+
+.index-contactUs-Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    padding: 3vw 0;
+    background-color: #f7f7f7;
+}
+
+.index-contactUs-p {
+    position: relative;
+}
+
+.index-contactUs-p p {
+    font-size: 2vw;
+    color: #363636;
+    border: orange solid 6px;
+    border-radius: 2vw;
+    padding: 2vw;
+}
+
+.index-contactUs-p img {
+    width: 9vw;
+    position: absolute;
+    right: -4vw;
+    top: -6vw;
+}
+
+.index-contactUs-form input {
+    padding: 0.5vw 1vw;
+    font-size: 1.6vw;
+    width: 30vw;
+    margin-bottom: 1vw;
+    outline: none;
+    border: 1px solid orange;
+    color: #363636;
+    border-radius: 0.5vw;
+}
+
+.index-contactUs-form label {
+    font-size: 1.6vw;
+    color: #363636;
+}
+
+.index-contactUs-form button {
+    font-size: 2vw;
+    padding: 0 2vw;
+    background-color: rgb(220, 100, 20);
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.index-contactUs-form button:active {
+    transform: translate(1vw);
+    transition: 0.1s;
+}
+
+.index-contactUs-form button:hover {
+    opacity: 60%;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    /* -------------------------------( header content )------------------------------------------- */
+    .index-header-content {
+        height: 46vw;
+        background-size: 100%;
+        gap: 2vw;
+    }
+
+    .index-header-content h1 {
+        width: 70vw;
+        color: white;
+        font-size: 3vw;
+    }
+
+    /* -------------------------------( main-content IPS Spaces )------------------------------------------- */
+    .spaces-all-boxes {
+        gap: 3vw;
+    }
+
+    .ips-spaces-h1 {
+        width: 96%;
+        margin-bottom: 4vw;
+    }
+
+    .ips-spaces-h1 h1 {
+        font-size: 3.3vw;
+    }
+
+    .spaces-box {
+        width: 30vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3vw;
+    }
+
+    .spaces-box img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .spaces-box-title {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .spaces-box-information {
+        font-size: 1.7vw;
+        font-weight: 600;
+        line-height: 3vw;
+        width: 80%;
+        margin-right: auto;
+    }
+
+    .find-out-more {
+        font-size: 1.9vw;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    /* -------------------------------( main-content IPS Projects )------------------------------------------- */
+
+    .index-projects-h1 {
+        width: 96%;
+    }
+
+    .index-projects-h1 h1 {
+        font-size: 3.3vw;
+    }
+
+    .this-mg-right {
+        margin-right: 0;
+    }
+
+    .index-project-box img {
+        width: 45vw;
+        height: 35vw;
+    }
+
+    .index-project-title {
+        font-size: 2.2vw;
+        margin: 3vw 0;
+    }
+
+    .index-project-details {
+        font-size: 3vw;
+        padding: 1vw 4vw;
+        border-radius: 1vw;
+        margin-top: -3vw;
+    }
+
+    /* -------------------------------( main-content Contact Us )------------------------------------------- */
+
+
+    .index-contactUs-p p {
+        font-size: 2.5vw;
+        color: #363636;
+        padding: 2.5vw;
+    }
+
+    .index-contactUs-form input {
+        padding: 1vw 1.5vw;
+        font-size: 2.1vw;
+        width: 33vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .index-contactUs-form label {
+        font-size: 2.1vw;
+    }
+
+    .index-contactUs-form button {
+        font-size: 3vw;
+        padding: 0 3.5vw;
+        border-radius: 1vw;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+        /* -------------------------------( header content )------------------------------------------- */
+    .index-header-content {
+        height: 66vw;
+        gap: 2vw;
+        margin-bottom: 22vw;
+    }
+
+    /* -------------------------------( main-content IPS Spaces )------------------------------------------- */
+
+    .ips-spaces-h1 {
+        width: 90%;
+        margin-bottom: 9vw;
+    }
+
+    .ips-spaces-h1 h1 {
+        font-size: 5.5vw;
+    }
+
+    .spaces-box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12vw;
+    }
+
+    .spaces-box img {
+        width: 90vw;
+        height: 70vw;
+    }
+
+    .spaces-box-title {
+        font-size: 6.6vw;
+        margin: 3vw 0;
+        width: 90%;
+    }
+
+    .spaces-box-information {
+        font-size: 3.6vw;
+        line-height: 6vw;
+        margin: 3vw 0;
+        width: 90%;
+    }
+
+    .find-out-more {
+        font-size: 3.6vw;
+        font-weight: 600;
+        width: 90%;
+    }
+
+    /* -------------------------------( main-content IPS Projects )------------------------------------------- */
+
+    .index-projects-h1 {
+        width: 92%;
+        margin-bottom: 4vw;
+    }
+
+    .index-projects-h1 h1 {
+        font-size: 5.5vw;
+    }
+
+
+    .index-projects-all-boxes {
+        gap: 16vw;
+    }
+
+    .index-project-box img {
+        width: 90vw;
+        height: 60vw;
+    }
+
+    .index-project-title {
+        font-size: 4vw;
+        font-weight: 600;
+        margin: 4vw 0;
+    }
+
+    .index-project-details {
+        font-size: 5.5vw;
+        padding: 1.5vw 6vw;
+        border-radius: 2vw;
+        margin-top: -6vw;
+        margin-left: 6vw;
+    }
+
+    /* -------------------------------( main-content Contact Us )------------------------------------------- */
+
+    .index-contactUs-Box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 6vw;
+        padding: 3vw 0;
+        background-color: #f7f7f7;
+    }
+
+    .index-contactUs-p {
+        position: relative;
+        width: 80%;
+    }
+
+    .index-contactUs-p p {
+        font-size: 4vw;
+        border: orange solid 3px;
+        border-radius: 3vw;
+        padding: 3vw;
+    }
+
+    .index-contactUs-p img {
+        width: 16vw;
+        right: -3vw;
+        top: 20vw;
+        transform: rotate(90deg);
+    }
+
+    .index-contactUs-form input {
+        padding: 1.5vw 3vw;
+        font-size: 3.5vw;
+        width: 50vw;
+        margin-bottom: 2vw;
+        border-radius: 1.5vw;
+    }
+
+    .index-contactUs-form label {
+        font-size: 3.5vw;
+    }
+
+    .index-contactUs-form button {
+        font-size: 6vw;
+        padding: 0 6vw;
+        border-radius: 1.5vw;
+    }
+}

@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clr-orange {
+    color: orange;
+}
+
+/* -------------------------------( main-navbar )---------------------------------- */
+
+.main-navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-top: 1px #e2e2e2 solid;
+    border-bottom: 1px #e2e2e2 solid;
+    z-index: 20;
+    transition: 0.3s;
+}
+
+.main-navbar-ul {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
+}
+
+.main-navbar-ul-a {
+    color: #363636;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.ips-logo {
+    font-size: 3.6vw;
+    color: #363636;
+    margin-left: 4vw;
+}
+
+.main-navbar-ul-a:hover,
+.ips-logo:hover,
+.search-btn:hover,
+.project-content a:hover,
+.search-box button:hover {
+    opacity: 60%;
+    transition: 0.3s;
+}
+
+.search-btn {
+    background: none;
+    font-size: 2vw;
+    border: none;
+    cursor: pointer;
+    color: orange;
+    margin-right: 4vw;
+}
+
+.project-btn {
+    font-size: 1.4vw;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.project-btn:hover .project-content {
+    height: 13vw;
+}
+
+.project-btn i {
+    font-size: 1vw;
+}
+
+.project-content {
+    position: absolute;
+    background-color: orange;
+    padding: 0 1vw;
+    border-radius: 0 0 1vw 1vw;
+    height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.project-content a {
+    display: block;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding: 1vw;
+    border-bottom: 1px dotted #363636;
+}
+
+
+/* ---------------------------------------( tablet-mobile-navbar )------------------------------------------------ */
+
+.tablet-mobile-navbar {
+    display: none;
+    justify-content: space-between;
+    border-top: 1px #e2e2e2 solid;
+    border-bottom: 1px #e2e2e2 solid;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+
+.tablet-mobile-ips-logo {
+    font-size: 7vw;
+    color: #363636;
+    padding: 0 3vw;
+}
+
+.tablet-mobile-navbar-rightSide {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    padding: 0 3vw;
+}
+
+.tablet-mobile-navbar-rightSide button {
+    background: none;
+    border: none;
+    color: #363636;
+    font-size: 3vw;
+}
+
+/* --------------------------( tablet-mobile-menubar )-------------------------------- */
+
+.tablet-mobile-menubar-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: #363636e7;
+    direction: rtl;
+    visibility: hidden;
+}
+
+.tablet-mobile-menubar-box {
+    width: 0;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, #e2e2e2, white); */
+    background-color: white;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.tablet-mobile-close-menuBar-btn {
+    font-size: 6vw;
+    color: white;
+    background: none;
+    border: none;
+    position: absolute;
+    margin: 6vw;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.tablet-mobile-menubar-ul {
+    padding: 9vw;
+    width: 50vw;
+    height: 100vw;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+
+.tablet-mobile-menubar-ul li {
+    margin-bottom: 12vw;
+    border-bottom: 1px solid #cacaca;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 0;
+}
+
+.tablet-mobile-menubar-a {
+    font-size: 4vw;
+    color: #363636;
+}
+
+.tablet-mobile-menubar-ul i {
+    color: orange;
+}
+
+.project-dropDown-btn {
+    font-size: 4vw;
+}
+
+.project-dropDown-btn i {
+    font-size: 4vw;
+    transition: 0.3s ease-in;
+    color: orange;
+}
+
+.drop-down-arrowDown-transform {
+    transform: rotate(0.5turn);
+}
+
+.project-dropdown-content {
+    width: 45vw;
+    height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.project-dropdown-content a {
+    display: block;
+    color: #363636;
+    font-size: 3vw;
+    margin: 5vw 0;
+    border-bottom: 1px dashed #cacaca;
+    padding: 3vw;
+}
+
+.drop-down-height-toggle {
+    height: 56vw;
+}
+
+/* -------------------------------( search container )------------------------------------------- */
+
+.search-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #363636e7;
+    z-index: 12;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    width: 0;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.search-box-form {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+.search-box textarea {
+    width: 40vw;
+    font-size: 2vw;
+    padding: 0.5vw 1vw;
+    border: none;
+    outline: none;
+    text-align: center;
+    resize: none;
+    background: none;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3vw;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+.search-container-closeBtn {
+    margin: 0 !important;
+    font-size: 2vw !important;
+}
+
+@media (max-width: 1024.98px) {
+    .main-navbar {
+        display: none;
+    }
+
+    .tablet-mobile-navbar {
+        display: flex;
+    }
+
+    .index-white-space {
+        height: 9vw;
+    }
+}
+
+@media (max-width: 768.98px) {
+    .tablet-mobile-ips-logo {
+        font-size: 11vw;
+    }
+
+    .tablet-mobile-navbar-rightSide button {
+        font-size: 6vw;
+    }
+
+    .tablet-mobile-menubar-a {
+        font-size: 6vw;
+    }
+
+    .project-dropDown-btn {
+        font-size: 6vw;
+    }
+
+    .project-dropDown-btn i {
+        font-size: 3vw;
+    }
+
+    .project-dropdown-content a {
+        font-size: 4vw;
+        margin: 5vw 0;
+    }
+
+    .search-box {
+        width: 0;
+    }
+
+    .search-box-form {
+        width: 70vw;
+    }
+
+    .search-box textarea {
+        width: 60vw;
+        font-size: 3.5vw;
+        padding: 1vw 2vw;
+    }
+
+    .search-box button {
+        font-size: 6vw;
+    }
+
+    .search-container-closeBtn {
+        margin: 0 !important;
+        font-size: 4vw !important;
+    }
+}
