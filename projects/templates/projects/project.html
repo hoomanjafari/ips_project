@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پرژه ها</title>
+    <link rel="stylesheet" href="/static/Css/project.css">
+</head>
+
+<body>
+
+    {% include 'includes/navbars.html' %}
+
+    <div class="ips-project-whiteSpace"></div>
+    <header class="ips-projects-header">
+        <h1>IPS پرژه های</h1>
+        <h2> برخی از پرژه های تکمیل شده با جزئیات  و نوع معماری ان ها</h2>
+    </header>
+
+    <main class="ips-projects-main-content">
+        <div class="ips-projects-filtering">
+            <form>
+                <label class="project-filtering-label">
+                    <input id="project-filtering" type="radio" name="project_filter" value="1">
+                    <span>همه پرژه ها</span>
+                </label>
+                <label class="project-filtering-label">
+                    <input id="project-filtering" type="radio" name="project_filter" value="2">
+                    <span>اداری و مطب</span>
+                </label>
+                <label class="project-filtering-label">
+                    <input id="project-filtering" type="radio" name="project_filter" value="3">
+                    <span>کافی شاپ و رستوران</span>
+                </label>
+                <label class="project-filtering-label">
+                    <input id="project-filtering" type="radio" name="project_filter" value="4">
+                    <span>منزل و ویلا</span>
+                </label>
+                <label class="project-filtering-label">
+                    <input id="project-filtering" type="radio" name="project_filter" value="5">
+                    <span>صفر تا صد ساختمان سازی</span>
+                </label>
+                <label class="project-filtering-label">
+                    <input id="project-filtering" type="radio" name="project_filter" value="6">
+                    <span>نما سازی</span>
+                </label>
+            </form>
+        </div>
+        <section class="ips-projects-container" id="ips-projects-container">
+            {% for project in projects %}
+                <div class="ips-project-box">
+                    <div class="ips-project-img">
+                        <img src="{{ project.project_main_image.url }}" alt="project-image">
+                    </div>
+
+                    <h1 class="ips-project-title">
+                        {{ project.project_title }}
+                    </h1>
+
+                    <p class="ips-project-address">
+                        {{ project.project_address }}
+                    </p>
+
+                    <p class="ips-project-info">
+                        <span>{{ project.project_time_city }}</span>
+                        <i class="fa fa-calendar clr-orange"></i>
+                    </p>
+                    <a href="#" class="ips-projects-go-details">مشاهده پرژه <i class="fa fa-arrow-right clr-orange"></i></a>
+                </div>
+            {% endfor %}
+            <div class="pagination">
+                <span class="step-links">
+                    {% if projects.has_previous %}
+                        <a title="قبلی" class="paginator-previousBtn" href="?page={{ projects.previous_page_number }}"><i class="fa fa-arrow-left"></i></a>
+                    {% endif %}
+                    {% for i in projects.paginator.page_range %}
+                        {% if i == projects.number %}
+                            <a class="pagination-active-page" href="?page={{ i }}">{{ i }}</a>
+                        {% else %}
+                            <a href="?page={{ i }}">{{ i }}</a>
+                        {% endif %}
+                    {% endfor %}
+                    {% if projects.has_next %}
+                        <a title="بعدی" class="paginator-nextBtn" href="?page={{ projects.next_page_number }}"><i class="fa fa-arrow-right"></i></a>
+                    {% endif %}
+                </span>
+            </div>
+            <!-- ------------------( more examples )----------------------------------------------------- -->
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {% include 'includes/footer.html' %}
+
+
+
+
+
+
+
+
+    <script src="/static/Js/gsap/gsap.min.js"></script>
+    <script src="/static/Js/gsap/ScrollTrigger.min.js"></script>
+    <script src="/static/Js/navbars.js"></script>
+    <script src="/static/Js/project.js"></script>
+</body>
+
+</html>

@@ -1,10 +1,10 @@
 <section class="search-container" id="search-container">
     <div class="search-box" id="search-box">
-        <button class="search-container-closeBtn" id="search-container-closeBtn" type="button">
-            <i class="fa fa-window-close"></i>
-        </button>
         <form class="search-box-form">
-            <textarea rows="2" placeholder="... متن مرطبت با پرژه مورد نظرتون رو بنویسید"></textarea>
+            <button class="search-container-closeBtn" id="search-container-closeBtn" type="button">
+                <i class="fa fa-window-close"></i>
+            </button>
+            <textarea rows="3" placeholder="متن مرطبت با پرژه مورد نظرتون رو بنویسید"></textarea>
             <button type="button"><i class="fa fa-search"></i></button>
         </form>
     </div>
@@ -13,16 +13,16 @@
 
 <section class="navbars">
     <nav class="main-navbar" id="main-navbar">
-        <a class="ips-logo" href="#"><span class="clr-orange">I</span>PS</a>
+        <a class="ips-logo" href="{% url 'home:home' %}"><span class="clr-orange">I</span>PS</a>
         <ul class="main-navbar-ul">
             <li><a class="main-navbar-ul-a" href="#"><span class="clr-orange">IPS</span> درباره</a></li>
             <li><a class="main-navbar-ul-a" href="#">ارتباط با ما</a></li>
-            <li><a class="main-navbar-ul-a" href="#">خدمات</a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">پرژه ها</a></li>
             <li>
-                <div class="project-btn">
-                    پرژه ها
+                <div class="services-btn">
+                    خدمات
                     <span class="clr-orange"><i class="fa fa-arrow-down"></i></span>
-                    <div class="project-content">
+                    <div class="services-content">
                         <a href="#">باسازی و دکراسیون داخلی</a>
                         <a href="#">صفر تا صد ساختمان سازی</a>
                         <a href="#">نما سازی</a>
@@ -34,10 +34,13 @@
     </nav>
 
     <nav class="tablet-mobile-navbar">
-        <a class="tablet-mobile-ips-logo" href="#"><span class="clr-orange">I</span>PS</a>
+        <a class="tablet-mobile-ips-logo" href="{% url 'home:home' %}"><span class="clr-orange">I</span>PS</a>
         <div class="tablet-mobile-navbar-rightSide">
-            <button id="tablet-mobile-search-openBtn" type="button"><span class="clr-orange"><i
-                        class="fa fa-search"></i></span></i></button>
+            <button id="tablet-mobile-search-openBtn" type="button">
+                <span class="clr-orange">
+                    <i class="fa fa-search"></i>
+                </span>
+            </button>
             <button id="tablet-mobile-open-menuBar-btn" type="button"><i class="fa fa-bars"></i></button>
         </div>
     </nav>
@@ -57,14 +60,14 @@
                     <i class="fa fa-handshake-o"></i>
                 </li>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="#">خدمات</a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'ips-projects:ips-projects' %}">پرژه ها</a>
                     <i class="fa fa-building"></i>
                 </li>
                 <li>
-                    <div class="project-dropDown-btn" id="project-dropDown-btn">
-                        پرژه ها
+                    <div class="services-dropDown-btn" id="services-dropDown-btn">
+                        خدمات
                         <i id="dropdown-arrow" class="fa fa-arrow-down"></i>
-                        <div class="project-dropdown-content" id="project-dropdown-content">
+                        <div class="project-dropdown-services" id="services-dropdown-content">
                             <a href="#">باسازی و دکراسیون داخلی</a>
                             <a href="#">صفر تا صد ساختمان سازی</a>
                             <a href="#">نما سازی</a>

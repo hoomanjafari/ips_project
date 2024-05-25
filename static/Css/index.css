@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3s;
 }
 
 a {
@@ -19,19 +20,24 @@ li {
 
 .index-white-space {
     height: 4vw;
-    display: block;
+    display: none;
 }
 
 .clr-orange {
     color: orange;
 }
 
-
+#opacity100-onload {
+    opacity: 0;
+    transition: 0.5s;
+}
 
 /* ------------------------------( header content )---------------------------------------------- */
 
 .index-header {
     margin-bottom: 9vw;
+    opacity: 0;
+    transition: 3s;
 }
 
 .index-header-content {
@@ -47,15 +53,19 @@ li {
     text-align: center;
     flex-wrap: wrap;
     gap: 2vw;
+    padding: 3vw;
 }
 
-.index-header-content h1 {
+.index-header-title {
     width: 50vw;
     color: white;
-    font-size: 2vw;
+    font-size: 3.6vw;
 }
 
-
+.index-header-info {
+    font-size: 1.6vw;
+    color: white;
+}
 
 /* -------------------------------( main-content IPS Spaces )------------------------------------------- */
 
@@ -277,18 +287,29 @@ li {
 
 
 @media (max-width: 1024px) {
+    .index-white-space {
+        height: 4vw;
+        display: none;
+    }
     /* -------------------------------( header content )------------------------------------------- */
     .index-header-content {
-        height: 46vw;
-        background-size: 100%;
-        gap: 2vw;
+        height: 60vw;
+        background-size: cover;
+        gap: 6vw;
+        padding: 5vw;
     }
 
-    .index-header-content h1 {
+    .index-header-title {
         width: 70vw;
         color: white;
-        font-size: 3vw;
+        font-size: 4vw;
     }
+
+    .index-header-info {
+        font-size: 2.2vw;
+        color: white;
+    }
+
 
     /* -------------------------------( main-content IPS Spaces )------------------------------------------- */
     .spaces-all-boxes {
@@ -400,12 +421,27 @@ li {
 
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 767px) {
         /* -------------------------------( header content )------------------------------------------- */
     .index-header-content {
-        height: 66vw;
-        gap: 2vw;
+        height: 130vw;
+        background-size: cover;
+        gap: 9vw;
+        padding: 7vw;
         margin-bottom: 22vw;
+    }
+
+    .index-header-title {
+        width: 80vw;
+        color: white;
+        font-size: 7vw;
+    }
+
+    .index-header-info {
+        font-size: 3.6vw;
+        color: white;
     }
 
     /* -------------------------------( main-content IPS Spaces )------------------------------------------- */

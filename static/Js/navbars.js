@@ -1,5 +1,5 @@
-const project_dropDown_btn = document.getElementById('project-dropDown-btn'),
-    project_dropdown_content = document.getElementById('project-dropdown-content'),
+const services_dropDown_btn = document.getElementById('services-dropDown-btn'),
+    services_dropdown_content = document.getElementById('services-dropdown-content'),
     dropdown_arrow = document.getElementById('dropdown-arrow'),
     tablet_mobile_close_menuBar_btn = document.getElementById('tablet-mobile-close-menuBar-btn'),
     tablet_mobile_open_menuBar_btn = document.getElementById('tablet-mobile-open-menuBar-btn'),
@@ -39,8 +39,8 @@ window.addEventListener('scroll', function () {
 
 
 // for mobile menubar dropdown content toggle things
-project_dropDown_btn.addEventListener('click', () => {
-    project_dropdown_content.classList.toggle('drop-down-height-toggle')
+services_dropDown_btn.addEventListener('click', () => {
+    services_dropdown_content.classList.toggle('drop-down-height-toggle')
     dropdown_arrow.classList.toggle('drop-down-arrowDown-transform')
 })
 
@@ -64,6 +64,16 @@ tablet_mobile_close_menuBar_btn.addEventListener('click', () => {
     }, 1000)
 })
 
+tablet_mobile_menubar_container.addEventListener('click', (target) => {
+    if (target.target === tablet_mobile_menubar_container ) {
+        tablet_mobile_menubar_ul.style.opacity = '0';
+        tablet_mobile_close_menuBar_btn.style.opacity = '0'
+        setTimeout(() => {
+            tablet_mobile_menubar_container.style.visibility = 'hidden';
+            tablet_mobile_menubar_box.style.width = '0';
+        }, 1000)
+    }
+})
 
 
 // for opening and closing search container

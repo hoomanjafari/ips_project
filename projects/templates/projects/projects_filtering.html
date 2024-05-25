@@ -1,0 +1,38 @@
+{% for project in projects %}
+    <div class="ips-project-box">
+        <div class="ips-project-img">
+            <img src="{{ project.project_main_image.url }}" alt="project-image">
+        </div>
+
+        <h1 class="ips-project-title">
+            {{ project.project_title }}
+        </h1>
+
+        <p class="ips-project-info">
+            <span>{{ project.project_time_city }}</span>
+            <i class="fa fa-calender"></i>
+        </p>
+
+        <p class="ips-project-address">
+            {{ project.project_address }}
+        </p>
+    </div>
+{% endfor %}
+<div class="pagination">
+    <span class="step-links">
+        {% if projects.has_previous %}
+            <a title="قبلی" class="paginator-previousBtn" onclick="goToPage({{ projects.previous_page_number }})"><i class="fa fa-arrow-left"></i></a>
+        {% endif %}
+        {% for i in projects.paginator.page_range %}
+            {% if i == projects.number %}
+                <a class="pagination-active-page" onclick="goToPage({{ i }})">{{ i }}</a>
+            {% else %}
+                <a onclick="goToPage({{ i }})">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
+        {% if projects.has_next %}
+            <a onclick="goToPage({{ projects.next_page_number }})" title="بعدی" class="paginator-nextBtn"><i class="fa fa-arrow-right"></i></a>
+        {% endif %}
+    </span>
+</div>
+<!-- ------------------( more examples )----------------------------------------------------- -->

@@ -20,13 +20,15 @@ li {
 
 .main-navbar {
     position: fixed;
-    width: 100%;
+    left: 2vw;
+    top: 0;
+    width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-top: 1px #e2e2e2 solid;
-    border-bottom: 1px #e2e2e2 solid;
+    border: 1px #e2e2e2 solid;
+    border-radius: 0 0 1vw 1vw;
     z-index: 20;
     transition: 0.3s;
 }
@@ -53,7 +55,7 @@ li {
 .main-navbar-ul-a:hover,
 .ips-logo:hover,
 .search-btn:hover,
-.project-content a:hover,
+.services-content a:hover,
 .search-box button:hover {
     opacity: 60%;
     transition: 0.3s;
@@ -68,21 +70,21 @@ li {
     margin-right: 4vw;
 }
 
-.project-btn {
+.services-btn {
     font-size: 1.4vw;
     cursor: pointer;
     font-weight: 600;
 }
 
-.project-btn:hover .project-content {
+.services-btn:hover .services-content {
     height: 13vw;
 }
 
-.project-btn i {
+.services-btn i {
     font-size: 1vw;
 }
 
-.project-content {
+.services-content {
     position: absolute;
     background-color: orange;
     padding: 0 1vw;
@@ -92,7 +94,7 @@ li {
     overflow: hidden;
 }
 
-.project-content a {
+.services-content a {
     display: block;
     color: white;
     font-size: 1.3vw;
@@ -171,7 +173,7 @@ li {
 .tablet-mobile-menubar-ul {
     padding: 9vw;
     width: 50vw;
-    height: 100vw;
+    height: 100%;
     opacity: 0;
     transition: 0.5s ease-in-out;
     overflow-y: scroll;
@@ -194,11 +196,11 @@ li {
     color: orange;
 }
 
-.project-dropDown-btn {
+.services-dropDown-btn {
     font-size: 4vw;
 }
 
-.project-dropDown-btn i {
+.services-dropDown-btn i {
     font-size: 4vw;
     transition: 0.3s ease-in;
     color: orange;
@@ -208,14 +210,14 @@ li {
     transform: rotate(0.5turn);
 }
 
-.project-dropdown-content {
+.project-dropdown-services {
     width: 45vw;
     height: 0;
     transition: 0.3s;
     overflow: hidden;
 }
 
-.project-dropdown-content a {
+.project-dropdown-services a {
     display: block;
     color: #363636;
     font-size: 3vw;
@@ -234,8 +236,8 @@ li {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #363636e7;
-    z-index: 12;
+    background-color: rgba(54, 54, 54, 0.98);
+    z-index: 22;
     display: none;
     justify-content: center;
     align-items: center;
@@ -276,10 +278,10 @@ li {
 
 .search-container-closeBtn {
     margin: 0 !important;
-    font-size: 2vw !important;
+    font-size: 3vw !important;
 }
 
-@media (max-width: 1024.98px) {
+@media (max-width: 1023.98px) {
     .main-navbar {
         display: none;
     }
@@ -293,7 +295,7 @@ li {
     }
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
     .tablet-mobile-ips-logo {
         font-size: 11vw;
     }
@@ -306,15 +308,15 @@ li {
         font-size: 6vw;
     }
 
-    .project-dropDown-btn {
+    .services-dropDown-btn {
         font-size: 6vw;
     }
 
-    .project-dropDown-btn i {
+    .services-dropDown-btn i {
         font-size: 3vw;
     }
 
-    .project-dropdown-content a {
+    .project-dropdown-services a {
         font-size: 4vw;
         margin: 5vw 0;
     }
@@ -329,8 +331,9 @@ li {
 
     .search-box textarea {
         width: 60vw;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         padding: 1vw 2vw;
+        color: white;
     }
 
     .search-box button {
@@ -339,6 +342,6 @@ li {
 
     .search-container-closeBtn {
         margin: 0 !important;
-        font-size: 4vw !important;
+        font-size: 6vw !important;
     }
 }
