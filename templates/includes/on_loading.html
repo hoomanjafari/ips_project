@@ -1,0 +1,51 @@
+<div class="index-on-loading" id="index-on-loading">
+    <img id="index-on-loading-img" src="/static/images/ips-main-logo.jpg" alt="ips-logo-img">
+</div>
+
+
+<style>
+    .index-on-loading {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transition: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: 30;
+    }
+
+    .index-on-loading img {
+        width: 20vw;
+        opacity: 0;
+        transition: 1.5s;
+    }
+
+    @media (max-width: 1023.98px) {
+        .index-on-loading img {
+            width: 26vw;
+            opacity: 100%;
+            transition: 1.5s;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .index-on-loading img {
+            width: 40vw;
+            opacity: 100%;
+            transition: 1.5s;
+        }
+    }
+</style>
+
+<script>
+    // on loading ...
+    window.addEventListener('load', () => {
+        document.getElementById('index-on-loading-img').style.opacity = '100%'
+        setTimeout(() => {
+            document.getElementById('index-on-loading').style.width = '0'
+        }, 1000)
+    })
+</script>

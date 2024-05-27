@@ -13,7 +13,9 @@
 
 <section class="navbars">
     <nav class="main-navbar" id="main-navbar">
-        <a class="ips-logo" href="{% url 'home:home' %}"><span class="clr-orange">I</span>PS</a>
+        <a class="ips-logo" href="{% url 'home:home' %}">
+            <img src="/static/images/ips-main-logo.jpg" alt="ips-logo">
+        </a>
         <ul class="main-navbar-ul">
             <li><a class="main-navbar-ul-a" href="#"><span class="clr-orange">IPS</span> درباره</a></li>
             <li><a class="main-navbar-ul-a" href="#">ارتباط با ما</a></li>
@@ -51,6 +53,9 @@
         </button>
         <div class="tablet-mobile-menubar-box" id="tablet-mobile-menubar-box">
             <ul class="tablet-mobile-menubar-ul" id="tablet-mobile-menubar-ul">
+                <div class="tablet-mobile-menubar-logoImg">
+                    <img src="/static/images/ips-main-logo.jpg" alt="ips-logo">
+                </div>
                 <li>
                     <a class="tablet-mobile-menubar-a" href="#">درباره <span class="clr-orange">IPS</span></a>
                     <i class="fa fa-info"></i>
@@ -73,7 +78,7 @@
                             <a href="#">نما سازی</a>
                         </div>
                     </div>
-                    <i class="fa fa-paperclip"></i>
+                    <i class="fa fa-paperclip" id="fa-paperclip"></i>
                 </li>
             </ul>
         </div>

@@ -5,8 +5,6 @@
 const title_border = document.querySelectorAll('.title-border'),
     title_mini_border = document.querySelectorAll('.title-mini-border');
 
-
-
 title_border.forEach(title => {
     let tl = gsap.timeline({
         scrollTrigger: {
@@ -17,21 +15,9 @@ title_border.forEach(title => {
             markers: false
         }
     })
-    if (screen.width >= 769) {
-        tl.to(title, {
-            width: '26vw',
-        })
-    }
-    else if (screen.width <= 768 && screen.width >= 426) {
-        tl.to(title, {
-            width: '50vw',
-        })
-    }
-    else if (screen.width <= 425) {
-        tl.to(title, {
-            width: '52vw',
-        })
-    }
+    tl.to(title, {
+        width: '94%',
+    })
 })
 
 title_mini_border.forEach(mini_title => {
@@ -46,38 +32,33 @@ title_mini_border.forEach(mini_title => {
     })
     if (screen.width >= 769) {
         tl.to(mini_title, {
-            width: '13vw',
+            width: '17vw',
         })
     }
     else if (screen.width <= 768 && screen.width >= 426) {
         tl.to(mini_title, {
-            width: '21vw',
+            width: '26vw',
         })
     }
     else if (screen.width <= 425) {
         tl.to(mini_title, {
-            width: '31vw',
+            width: '44vw',
         })
     }
 })
 
-
-
 const elements = document.querySelectorAll('#opacity100-onload');
 elements.forEach(element => {
     let tl = gsap.timeline({
-        scrollTrigger: element,
-        start: 'center',
-        end: 'bottom center',
-        scrub: false,
-        markers: false
+        scrollTrigger: {
+            trigger: element,
+            start: 'top center',
+            end: 'bottom center',
+            scrub: false,
+            markers: false,
+        }
     })
     tl.to(element,{
         opacity: 100,
     })
-})
-
-
-window.addEventListener('load', () => {
-    document.getElementById('index-header').style.opacity = '100%'
 })

@@ -36,8 +36,9 @@ li {
 
 .index-header {
     margin-bottom: 9vw;
-    opacity: 0;
+    /*opacity: 0;*/
     transition: 3s;
+    position: relative;
 }
 
 .index-header-content {
@@ -79,11 +80,11 @@ li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vw;
+    gap: 2vw;
 }
 
 .ips-spaces-h1 {
-    width: 82%;
+    width: 93%;
     margin-bottom: 3vw;
     padding: 1vw 0;
 }
@@ -94,17 +95,19 @@ li {
 }
 
 .spaces-box {
-    width: 25vw;
+    width: 45vw;
+    margin-bottom: 3vw;
 }
 
 .spaces-box:hover {
-    opacity: 80%;
-    transition: 0.3s;
+    transition: 0.5s;
+    transform: scale(1.02);
 }
 
 .spaces-box img {
-    width: 25vw;
-    height: 25vw;
+    width: 45vw;
+    height: 35vw;
+    border-radius: 1vw;
 }
 
 .spaces-box-title {
@@ -138,7 +141,7 @@ li {
 }
 
 .index-projects-h1 {
-    width: 86%;
+    width: 93%;
     margin-bottom: 3vw;
     padding: 1vw 0;
 }
@@ -492,7 +495,7 @@ li {
 
     .index-projects-h1 {
         width: 92%;
-        margin-bottom: 4vw;
+        margin-bottom: 9vw;
     }
 
     .index-projects-h1 h1 {

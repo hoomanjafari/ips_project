@@ -42,6 +42,7 @@ window.addEventListener('scroll', function () {
 services_dropDown_btn.addEventListener('click', () => {
     services_dropdown_content.classList.toggle('drop-down-height-toggle')
     dropdown_arrow.classList.toggle('drop-down-arrowDown-transform')
+    document.getElementById('fa-paperclip').classList.toggle('this-go-hidden')
 })
 
 
