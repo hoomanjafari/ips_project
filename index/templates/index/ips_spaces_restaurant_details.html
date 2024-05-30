@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حیطه های کاری</title>
+    <link rel="stylesheet" href="/static/Css/services.css">
+</head>
+
+<body>
+
+    {% include 'includes/on_loading.html' %}
+
+    {% include 'includes/navbars.html' %}
+
+    <div class="ips-spaces-white-spaces"></div>
+    <main class="ips-spaces-main-container">
+
+        <div class="go-to-previous-page">
+            <button type="button" onclick="window.history.go(-1); return false;">
+                <i class="fa fa-arrow-left"></i>
+                برو به صفحه قبلی
+            </button>
+        </div>
+
+        <div class="ips-spaces-title">
+            <h1>
+                رستوران و کافه
+            </h1>
+        </div>
+
+        <div class="ips-spaces-image">
+            <img src="/static/images/restaraunt.jpg" alt="nema-sazi-image">
+        </div>
+
+        <div class="ips-spaces-info">
+            <h2>
+                ورود به سالنی که در نگاه اول دلپذیر و جذاب است چقدر عالی است! در طول سال ها، ما شاهد تبدیل آن از یک مکان
+                گذری ناشناس به یک منطقه راحت برای استراحت و ملاقات بوده ایم. این محیط مرکزی و چند منظوره می تواند در
+                صورت لزوم نقش های جدید و شکل های جدیدی به دست آورد. بنابراین سالن به فضایی پر از گزینه ها تبدیل می شود
+                که برای آن سیستم های مبلمان را ارائه می دهیم که در آن جذابیت رسمی، راحتی و فناوری به طور هماهنگ با هم
+                ترکیب می شوند تا تجربه کاربری کامل و رضایت بخشی را ارائه دهند. خواه سه ساعت انتظار باشد یا یک جلسه پنج
+                دقیقه ای.
+
+            </h2>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/static/images/home.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/images/nema-sazi.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/images/offic.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/images/1.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/images/2.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/images/3.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/images/4.jpg" alt="image">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/images/5.jpg" alt="image">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+
+
+
+
+
+
+
+
+    <script src="/static/Js/Swiper/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="/static/Js/navbars.js"></script>
+    <script src="/static/Js/services.js"></script>
+</body>
+
+</html>

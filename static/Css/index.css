@@ -85,12 +85,12 @@ li {
 
 .ips-spaces-h1 {
     width: 93%;
-    margin-bottom: 3vw;
+    margin: 9vw 0 3vw;
     padding: 1vw 0;
 }
 
 .ips-spaces-h1 h1 {
-    font-size: 2.2vw;
+    font-size: 3vw;
     color: #363636;
 }
 
@@ -142,7 +142,7 @@ li {
 
 .index-projects-h1 {
     width: 93%;
-    margin-bottom: 3vw;
+    margin: 9vw 0 3vw;
     padding: 1vw 0;
 }
 
@@ -165,7 +165,7 @@ li {
 }
 
 .index-projects-h1 h1 {
-    font-size: 2.2vw;
+    font-size: 3vw;
     color: #363636;
     margin-bottom: 1vw;
 }
@@ -336,6 +336,11 @@ li {
         margin-bottom: 3vw;
     }
 
+    .spaces-box:hover {
+        transition: 0.5s;
+        transform: none;
+    }
+
     .spaces-box img {
         width: 30vw;
         height: 30vw;
@@ -455,7 +460,7 @@ li {
     }
 
     .ips-spaces-h1 h1 {
-        font-size: 5.5vw;
+        font-size: 7vw;
     }
 
     .spaces-box {
@@ -466,14 +471,17 @@ li {
         align-items: center;
         margin-bottom: 12vw;
     }
-
+    .spaces-box:hover {
+        transition: 0.5s;
+        transform: none;
+    }
     .spaces-box img {
         width: 90vw;
         height: 70vw;
     }
 
     .spaces-box-title {
-        font-size: 6.6vw;
+        font-size: 5vw;
         margin: 3vw 0;
         width: 90%;
     }
@@ -499,7 +507,7 @@ li {
     }
 
     .index-projects-h1 h1 {
-        font-size: 5.5vw;
+        font-size: 7vw;
     }
 
 

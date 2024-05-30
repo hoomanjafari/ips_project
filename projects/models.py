@@ -15,7 +15,7 @@ class IpsProjects(models.Model):
     is_coffe_restaurant = models.BooleanField(default=False)
     is_office = models.BooleanField(default=False)
 
-    project_img_1 = models.ImageField(upload_to='img/%y%m%d%H%M%=', null=True, blank=True)
+    project_img_1 = models.ImageField(upload_to='img/%y%m%d%H%M', null=True, blank=True)
     project_img_2 = models.ImageField(upload_to='img/%y%m%d%H%M', null=True, blank=True)
     project_img_3 = models.ImageField(upload_to='img/%y%m%d%H%M', null=True, blank=True)
     project_img_4 = models.ImageField(upload_to='img/%y%m%d%H%M', null=True, blank=True)

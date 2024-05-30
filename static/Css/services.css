@@ -1,0 +1,202 @@
+@import url('/static/Js/Swiper/node_modules/swiper/swiper-bundle.min.css');
+@import url('/static/Fonts/font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('/static/Css/navbars.css');
+@import url('/static/Css/footer.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ips-spaces-white-spaces {
+    height: 6vw;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.go-to-previous-page {
+    width: 80vw;
+    margin: 4vw 0;
+}
+
+.go-to-previous-page button {
+    background: none;
+    border: none;
+    font-size: 2vw;
+    cursor: pointer;
+    color: crimson;
+}
+
+.go-to-previous-page button:hover {
+    transform: translateX(-9px);
+    transition: 0.4s;
+}
+
+.go-to-previous-page button:active {
+    opacity: 40%;
+    transition: 0.1s;
+}
+
+.ips-spaces-title {
+    width: 80vw;
+    text-align: left;
+}
+
+.ips-spaces-title h1 {
+    font-size: 3vw;
+    color: #5B5B5B;
+}
+
+.ips-spaces-image {
+    width: 100%;
+    text-align: center;
+}
+
+.ips-spaces-image img {
+    width: 70vw;
+}
+
+.ips-spaces-main-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+    margin: 0 auto;
+}
+
+.ips-spaces-info {
+    width: 80vw;
+    font-size: 1vw;
+    color: #5B5B5B;
+    line-height: 2.5vw;
+    margin-bottom: 6vw;
+}
+
+/*-----------------------------( swiper )------------------------------------*/
+
+.swiper {
+    width: 100%;
+    height: 40vw;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 40vw;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: orange !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: orange !important;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023.98px) {
+
+    .ips-spaces-white-spaces {
+        height: 9vw;
+    }
+
+    .go-to-previous-page button {
+        font-size: 3vw;
+    }
+
+    .ips-spaces-title h1 {
+        font-size: 4.4vw;
+    }
+
+    .ips-spaces-info {
+        font-size: 1.5vw;
+        line-height: 3vw;
+        margin-bottom: 8vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+    .ips-spaces-white-spaces {
+        height: 26vw;
+    }
+
+    .go-to-previous-page button {
+        font-size: 5vw;
+    }
+
+    .ips-spaces-title h1 {
+        font-size: 6.6vw;
+    }
+
+    .ips-spaces-info {
+        font-size: 3vw;
+        line-height: 6vw;
+        margin: 13vw;
+        text-align: center;
+    }
+
+    /*---------------------( swiper )---------------------------*/
+
+    .swiper {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: orange !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: orange !important;
+    }
+
+}

@@ -69,7 +69,7 @@
                         <span>{{ project.project_time_city }}</span>
                         <i class="fa fa-calendar clr-orange"></i>
                     </p>
-                    <a href="#" class="ips-projects-go-details">مشاهده پرژه <i class="fa fa-arrow-right clr-orange"></i></a>
+                    <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">مشاهده پرژه <i class="fa fa-arrow-right clr-orange"></i></a>
                 </div>
             {% endfor %}
             <div class="pagination">

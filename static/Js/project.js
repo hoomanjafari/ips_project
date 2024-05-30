@@ -4,7 +4,7 @@ ips_project_box.forEach(box => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: box,
-            start: 'top center',
+            start: 'top 90%',
             end: 'bottom center',
             scrub: false,
             markers: false,
@@ -63,7 +63,7 @@ function test(){
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: box,
-                start: 'top center',
+                start: 'top 90%',
                 end: 'bottom center',
                 scrub: false,
                 markers: false,

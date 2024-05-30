@@ -47,3 +47,12 @@ class FilterChangeTemplate(View):
         projects = paginator.get_page(page)
 
         return render(request, 'projects/projects_filtering.html', {'projects': projects})
+
+
+# project details template
+class IpsProjectDetailsView(View):
+    def get(self, request, **kwargs):
+        project = IpsProjects.objects.get(pk=kwargs['pk'])
+        return render(request, 'projects/projects_details.html', {
+            'project': project
+        })

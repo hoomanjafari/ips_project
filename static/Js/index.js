@@ -9,7 +9,7 @@ title_border.forEach(title => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: title,
-            start: 'top center',
+            start: 'top 70%',
             end: 'bottom center',
             scrub: true,
             markers: false
@@ -24,7 +24,7 @@ title_mini_border.forEach(mini_title => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: mini_title,
-            start: 'top center',
+            start: 'top 70%',
             end: 'bottom center',
             scrub: true,
             markers: false
@@ -52,7 +52,7 @@ elements.forEach(element => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: element,
-            start: 'top center',
+            start: 'top 70%',
             end: 'bottom center',
             scrub: false,
             markers: false,
