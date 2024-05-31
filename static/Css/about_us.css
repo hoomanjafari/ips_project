@@ -1,0 +1,267 @@
+@import url('/static/Css/navbars.css');
+@import url('/static/Css/footer.css');
+@import url('/static/Fonts/font-awesome-4.7.0/css/font-awesome.min.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ips-about-us-white-space {
+    height: 9vw;
+    width: 100%;
+}
+
+.orange-clr {
+    color: orange;
+}
+
+
+
+
+body {
+    background-image: url('/static/images/ips-about-us-bg.PNG');
+    background-repeat: repeat;
+}
+
+.ips-about-us-app {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9vw;
+    justify-content: center;
+
+}
+
+.ips-about-us-header-image {
+    text-align: center;
+}
+
+.ips-about-us-header-image img {
+    width: 60vw;
+}
+
+.ips-about-us-header {
+    width: 100%;
+}
+
+/* ----------------------------( main content )------------------------------------- */
+
+.ips-about-us-main-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15vw;
+}
+
+.ips-about-us-border {
+    border-top: 4px solid white;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 5vw auto;
+}
+
+.ips-about-us-border p {
+    color: white;
+    background-image: url('/static/images/ips-about-us-bg.PNG');
+    background-repeat: repeat;
+    padding: 0 4vw;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-top: -2vw;
+}
+
+
+/* ----------------------------------( swiper )------------------------------------ */
+
+.ips-about-us-swiper {
+    width: 100%;
+}
+
+swiper-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 50vw;
+}
+
+
+.mySwiper2 {
+    height: 10vw;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper2 img {
+    height: 100%;
+}
+
+.mySwiper2 swiper-slide {
+    opacity: 0.4;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 20vw !important;
+    width: 10vw !important;
+}
+
+
+
+/* ---------------------------------( about-us-information )------------------------------------ */
+
+.ips-about-us-information-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+.ips-about-us-information-box-left-side,
+.ips-about-us-information-box-right-side {
+    width: calc(calc(100% / 2) - 10vw);
+}
+
+.ips-about-us-information-box-left-side img {
+    width: 25vw;
+}
+
+.ips-about-us-information-box-right-side {
+    direction: rtl;
+}
+
+.ips-about-us-information-box-right-side h1 {
+    font-size: 3vw;
+    color: white;
+}
+
+.ips-about-us-information-box-right-side h2 {
+    font-size: 2vw;
+    line-height: 3vw;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1023.98px) {
+    .ips-about-us-border {
+        border-top: 5px solid white;
+        width: 90vw;
+    }
+
+    .ips-about-us-border p {
+        font-size: 4vw;
+        margin-top: -2.5vw;
+    }
+
+    swiper-slide img {
+        width: 100%;
+        height: 40vw;
+    }
+
+    .mySwiper2 {
+        height: 15vw;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    .ips-about-us-header-image img {
+        width: 90vw;
+    }
+
+    .ips-about-us-border {
+        border-top: 4px solid white;
+        width: 90vw;
+    }
+
+    .ips-about-us-border p {
+        font-size: 6vw;
+        margin-top: -4.5vw;
+    }
+
+    swiper-slide img {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .mySwiper2 {
+        height: 25vw;
+    }
+
+    /* ---------------------------------( about-us-information )------------------------------------ */
+
+    .ips-about-us-information-box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ips-about-us-information-box-left-side,
+    .ips-about-us-information-box-right-side {
+        margin: 3vw 0;
+        width: 100%;
+    }
+
+    .ips-about-us-information-box-left-side {
+        text-align: center;
+    }
+
+    .ips-about-us-information-box-left-side img {
+        width: 50vw;
+    }
+
+    .ips-about-us-information-box-right-side {
+        width: 80%;
+    }
+
+    .ips-about-us-information-box-right-side h1 {
+        font-size: 6vw;
+    }
+    
+    .ips-about-us-information-box-right-side h2 {
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+    
+}

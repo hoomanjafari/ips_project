@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره IPS</title>
+    <link rel="stylesheet" href="/static/Css/about_us.css">
+</head>
+
+<body>
+
+    {% include 'includes/navbars.html' %}
+    {%  include 'includes/on_loading.html' %}
+    <section class="ips-about-us-app">
+
+        <div class="ips-about-us-white-space"></div>
+
+        <header class="ips-about-us-header">
+            <section class="ips-about-us-header-container">
+                <div class="ips-about-us-header-image">
+                    <img src="/static/images/photo_2024-05-29_11-26-08.jpg" alt="about-ips-image">
+                </div>
+            </section>
+        </header>
+
+
+
+        <main class="ips-about-us-main-content">
+            <section class="ips-about-us-swiper">
+                <div class="ips-about-us-border">
+                    <p>کاتالوگ پرژه ها</p>
+                </div>
+                <swiper-container style="--swiper-navigation-color: orange; --swiper-pagination-color: orange;
+                 --swiper-navigation-size: 6vw"
+                    class="mySwiper" thumbs-swiper=".mySwiper2" space-between="10" navigation="true">
+                    {% for catalog in catalogs %}
+                        <swiper-slide>
+                            <img src="{{ catalog.image.url }}" />
+                        </swiper-slide>
+                    {% endfor %}
+                </swiper-container>
+
+                <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true"
+                    watch-slides-progress="true">
+                    {% for catalog in catalogs %}
+                        <swiper-slide>
+                            <img src="{{ catalog.image.url }}" />
+                        </swiper-slide>
+                    {% endfor %}
+                </swiper-container>
+            </section>
+
+            
+            <section class="ips-about-us-information-container">
+                <div class="ips-about-us-border">
+                    <p>Ista Pey Shahbaz</p>
+                </div>
+                <div class="ips-about-us-information-box">
+                    <div class="ips-about-us-information-box-left-side">
+                        <img src="/static/images/about-us-information2.jpg" alt="about-us-image">
+                    </div>
+
+                    <div class="ips-about-us-information-box-right-side">
+                        <h1>شرکت <span class="orange-clr">IPS</span></h1>
+                        <h2>
+                            به همراه جمعی از طراحان خوش فکر و صاحب سبک در حال فعالیت است و محور فعالیت های شرکت شامل
+                            تحلیل، طراحی، اجرا، نظارت و مشاوره در زمینه های دکراسیون داخلی، نما های سنتی و مدرن، باسازی
+                            و بهسازی بنا ها و بافت های فرسوده، پرژه های ساختمانی و عمرانی و ... می باش. این شرکت با بهره
+                            گیری از مجموعه ای ارزشمند از دانش فنی و نیروی انسانی متخصص در طراحی و اجرای بهترو مناسب تر
+                            عناصر موجود در فضای طرح، گامی بلند در این عرصه برداشته و با تلفیق سبک های مختلف هنری، در
+                            ارائه طرح های فنی، خلاقانه و مدرن پیشرو میباشد
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </section>
+
+    {% include 'includes/footer.html' %}
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/static/Js/Swiper/node_modules/swiper/swiper-element-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+    <script src="/static/Js/navbars.js"></script>
+</body>
+
+</html>

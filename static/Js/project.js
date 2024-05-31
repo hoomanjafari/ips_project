@@ -137,7 +137,7 @@ project_filtering.forEach(item => {
 })
 
 
-// with this function on the template that is created for filtered projects user can change the pages if there are more pages for that specific project
+// with this function on the template that is created for filtered projects, user can change the pages if there are more pages for that specific project
 function goToPage(page_number) {
     console.log('mona monaa is', page_number)
     fetch(`/ips-projects/filtering_template_change/?page=${page_number}`, {
@@ -149,5 +149,6 @@ function goToPage(page_number) {
         ips_projects_container.innerHTML = html
         ips_project_box = document.querySelectorAll('.ips-project-box');
         test()
+        window.scrollTo(0, window.scrollHeight)
     })
 }

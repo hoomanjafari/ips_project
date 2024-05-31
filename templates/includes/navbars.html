@@ -17,7 +17,7 @@
             <img src="/static/images/ips-main-logo.jpg" alt="ips-logo">
         </a>
         <ul class="main-navbar-ul">
-            <li><a class="main-navbar-ul-a" href="#"><span class="clr-orange">IPS</span> درباره</a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'about-us:about-us' %}"><span class="clr-orange">IPS</span> درباره</a></li>
             <li><a class="main-navbar-ul-a" href="#">ارتباط با ما</a></li>
             <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">پرژه ها</a></li>
             <li>
@@ -25,9 +25,10 @@
                     خدمات
                     <span class="clr-orange"><i class="fa fa-arrow-down"></i></span>
                     <div class="services-content">
-                        <a href="#">باسازی و دکراسیون داخلی</a>
-                        <a href="#">صفر تا صد ساختمان سازی</a>
-                        <a href="#">نما سازی</a>
+                        <a href="{% url 'home:ips-spaces-facade' %}">نما سازی و صفر تا صد ساختمان سازی</a>
+                        <a href="{% url 'home:ips-spaces-restaurant' %}">کافه و رستوران</a>
+                        <a href="{% url 'home:ips-spaces-home' %}">منزل و ویلا</a>
+                        <a href="{% url 'home:ips-spaces-office' %}">محل کار</a>
                     </div>
                 </div>
             </li>
@@ -59,7 +60,7 @@
                     </a>
                 </div>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="#">درباره <span class="clr-orange">IPS</span></a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'about-us:about-us' %}">درباره <span class="clr-orange">IPS</span></a>
                     <i class="fa fa-info"></i>
                 </li>
                 <li>
@@ -75,9 +76,10 @@
                         خدمات
                         <i id="dropdown-arrow" class="fa fa-arrow-down"></i>
                         <div class="project-dropdown-services" id="services-dropdown-content">
-                            <a href="#">باسازی و دکراسیون داخلی</a>
-                            <a href="#">صفر تا صد ساختمان سازی</a>
-                            <a href="#">نما سازی</a>
+                            <a href="{% url 'home:ips-spaces-facade' %}">نما سازی و صفر تا صد ساختمان سازی</a>
+                            <a href="{% url 'home:ips-spaces-restaurant' %}">کافه و رستوران</a>
+                            <a href="{% url 'home:ips-spaces-home' %}">منزل و ویلا</a>
+                            <a href="{% url 'home:ips-spaces-office' %}">محل کار</a>
                         </div>
                     </div>
                     <i class="fa fa-paperclip" id="fa-paperclip"></i>
