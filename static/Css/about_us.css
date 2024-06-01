@@ -18,7 +18,10 @@
     color: orange;
 }
 
-
+#about-us-on-scroll-event {
+    opacity: 0;
+    transition: 0.6s;
+}
 
 
 body {
@@ -56,11 +59,12 @@ body {
 }
 
 .ips-about-us-border {
-    border-top: 4px solid white;
+    border-top: 4px solid ;
     display: flex;
     justify-content: center;
     width: 90vw;
     margin: 5vw auto;
+    transition: 0.3s;
 }
 
 .ips-about-us-border p {
@@ -184,7 +188,7 @@ swiper-slide img {
 
 @media(max-width: 1023.98px) {
     .ips-about-us-border {
-        border-top: 5px solid white;
+        border-top: 5px solid ;
         width: 90vw;
     }
 
@@ -211,7 +215,7 @@ swiper-slide img {
     }
 
     .ips-about-us-border {
-        border-top: 4px solid white;
+        border-top: 4px solid;
         width: 90vw;
     }
 

@@ -10,7 +10,7 @@ title_border.forEach(title => {
         scrollTrigger: {
             trigger: title,
             start: 'top 70%',
-            end: 'bottom center',
+            end: 'top 70%',
             scrub: true,
             markers: false
         }
@@ -25,7 +25,7 @@ title_mini_border.forEach(mini_title => {
         scrollTrigger: {
             trigger: mini_title,
             start: 'top 70%',
-            end: 'bottom center',
+            end: 'top 70%',
             scrub: true,
             markers: false
         }

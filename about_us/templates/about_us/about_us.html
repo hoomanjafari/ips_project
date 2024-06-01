@@ -27,9 +27,9 @@
 
 
         <main class="ips-about-us-main-content">
-            <section class="ips-about-us-swiper">
-                <div class="ips-about-us-border">
-                    <p>کاتالوگ پرژه ها</p>
+            <section class="ips-about-us-swiper" id="about-us-on-scroll-event">
+                <div class="ips-about-us-border" id="ips-about-us-border">
+                    <p><span class="clr-orange">کا</span>تالوگ <span class="clr-orange">پر</span>ژه ها</p>
                 </div>
                 <swiper-container style="--swiper-navigation-color: orange; --swiper-pagination-color: orange;
                  --swiper-navigation-size: 6vw"
@@ -53,15 +53,15 @@
 
             
             <section class="ips-about-us-information-container">
-                <div class="ips-about-us-border">
-                    <p>Ista Pey Shahbaz</p>
+                <div class="ips-about-us-border" id="ips-about-us-border">
+                    <p><span class="orange-clr">I</span>sta <span class="orange-clr">P</span>ey <span class="orange-clr">S</span> hahbaz</p>
                 </div>
                 <div class="ips-about-us-information-box">
-                    <div class="ips-about-us-information-box-left-side">
+                    <div class="ips-about-us-information-box-left-side" id="about-us-on-scroll-event">
                         <img src="/static/images/about-us-information2.jpg" alt="about-us-image">
                     </div>
 
-                    <div class="ips-about-us-information-box-right-side">
+                    <div class="ips-about-us-information-box-right-side" id="about-us-on-scroll-event">
                         <h1>شرکت <span class="orange-clr">IPS</span></h1>
                         <h2>
                             به همراه جمعی از طراحان خوش فکر و صاحب سبک در حال فعالیت است و محور فعالیت های شرکت شامل
@@ -92,8 +92,11 @@
 
 
     <script src="/static/Js/Swiper/node_modules/swiper/swiper-element-bundle.min.js"></script>
+    <script src="/static/Js/gsap/gsap.min.js"></script>
+    <script src="/static/Js/gsap/ScrollTrigger.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
     <script src="/static/Js/navbars.js"></script>
+    <script src="/static/Js/about_us.js"></script>
 </body>
 
 </html>
