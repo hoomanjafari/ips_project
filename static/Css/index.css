@@ -220,6 +220,24 @@ li {
 
 /* -------------------------------( main-content Contact Us )------------------------------------------- */
 
+.messages-style {
+    opacity: 0;
+    position: fixed;
+    top: 16vw;
+    left: 16vw;
+    background-color: rgba(0, 128, 0, 0.71);
+    border-radius: 1vw;
+    padding: 0.5vw 3vw;
+    font-size: 2vw;
+    transition: 0.3s;
+    color: white;
+    z-index: 33;
+}
+
+.index-contactUs-container {
+    position: relative;
+}
+
 .index-contactUs-Box {
     display: flex;
     justify-content: center;
@@ -398,7 +416,6 @@ li {
 
     /* -------------------------------( main-content Contact Us )------------------------------------------- */
 
-
     .index-contactUs-p p {
         font-size: 2.5vw;
         color: #363636;
@@ -563,6 +580,12 @@ li {
         right: -3vw;
         top: 20vw;
         transform: rotate(90deg);
+    }
+
+    .messages-style {
+        font-size: 5vw;
+        top: 16vw;
+        left: 1vw;
     }
 
     .index-contactUs-form input {

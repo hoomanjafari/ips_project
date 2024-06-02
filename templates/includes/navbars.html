@@ -18,7 +18,7 @@
         </a>
         <ul class="main-navbar-ul">
             <li><a class="main-navbar-ul-a" href="{% url 'about-us:about-us' %}"><span class="clr-orange">IPS</span> درباره</a></li>
-            <li><a class="main-navbar-ul-a" href="#">ارتباط با ما</a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'contact-us:contact-us' %}">ارتباط با ما</a></li>
             <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">پرژه ها</a></li>
             <li>
                 <div class="services-btn">
@@ -64,7 +64,7 @@
                     <i class="fa fa-info"></i>
                 </li>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="#">ارتباط با ما</a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'contact-us:contact-us' %}">ارتباط با ما</a>
                     <i class="fa fa-handshake-o"></i>
                 </li>
                 <li>

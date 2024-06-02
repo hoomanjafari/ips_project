@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('index.urls', namespace='home')),
     path('ips-projects/', include('projects.urls', namespace='ips-projects')),
     path('about-us/', include('about_us.urls', namespace='about-us')),
+    path('contact-us/', include('contact_us.urls', namespace='contact-us')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

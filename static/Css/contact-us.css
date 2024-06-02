@@ -1,0 +1,194 @@
+@import url('/static/Css/navbars.css');
+@import url('/static/Fonts/font-awesome-4.7.0/css/font-awesome.min.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ips-contact-us-white-space {
+    height: 12vw;
+}
+
+.messages-style {
+    opacity: 0;
+    position: fixed;
+    top: 16vw;
+    left: 16vw;
+    background-color: rgba(0, 128, 0, 0.71);
+    border-radius: 1vw;
+    padding: 0.5vw 3vw;
+    font-size: 2vw;
+    transition: 0.3s;
+    color: white;
+    z-index: 33;
+}
+
+/* ----------------------------------------------------------- */
+
+body {
+    background-color: #232E30;
+}
+
+.ips-contact-us-main-container {
+    display: flex;
+}
+
+
+.ips-contact-us-img img {
+    width: 69vw;
+    opacity: 70%;
+}
+
+.ips-contact-us-p {
+    font-size: 1.6vw;
+    color: #FF7300;
+    margin-bottom: 2vw;
+    width: 25vw;
+    text-align: center;
+}
+
+.ips-contact-us-form-box {
+    margin: 0 auto;
+    padding: 3vw 2vw;
+    background-color: #2C3A3E;
+}
+
+.ips-contact-us-form-box form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 25vw;
+}
+
+.ips-contact-us-form input {
+    display: block;
+    width: 100%;
+    font-size: 1.6vw;
+    padding: 0.5vw 1vw;
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    margin: 1vw 0;
+    color: #FF7300;
+}
+
+.ips-contact-us-form textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.6vw;
+    padding: 0.5vw 1vw;
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    margin: 1vw 0;
+    resize: none;
+    color: #FF7300;
+}
+
+.ips-contact-us-form label {
+    width: 100%;
+    font-size: 1.4vw;
+    color: #FF7300;
+    font-weight: 600;
+}
+
+.ips-contact-us-form button {
+    display: block;
+    font-size: 2vw;
+    padding: 0.5vw 2vw;
+    width: 60%;
+    background-color: #FF7300;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.ips-contact-us-form button:hover {
+    opacity: 60%;
+    transition: 0.3s;
+}
+
+.ips-contact-us-form button:active {
+    transition: 0.1s;
+    transform: translate(1vw);
+}
+
+@media (max-width: 1023.98px) {
+    .ips-contact-us-p {
+        font-size: 2vw;
+    }
+
+    .ips-contact-us-img img {
+        width: 72vw;
+        opacity: 70%;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    body {
+        background-color: #2C3A3E;
+    }
+
+    .ips-contact-us-white-space {
+        height: 22vw;
+    }
+
+    .ips-contact-us-img img {
+        width: 100%;
+        opacity: 70%;
+    }
+
+    .ips-contact-us-main-container {
+        flex-wrap: wrap;
+    }
+
+    .ips-contact-us-p {
+        font-size: 5vw;
+        width: 66vw;
+        margin-bottom: 6vw;
+    }
+
+    .messages-style {
+        font-size: 5vw;
+        top: 16vw;
+        left: 1vw;
+    }
+
+    .ips-contact-us-form-box form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 66vw;
+    }
+
+    .ips-contact-us-form input {
+        width: 100%;
+        font-size: 3vw;
+        padding: 1.5vw 3vw;
+        border-radius: 2vw;
+        margin: 2vw 0;
+    }
+
+    .ips-contact-us-form textarea {
+        font-size: 3vw;
+        padding: 1.5vw 3vw;
+        border-radius: 2vw;
+        margin: 2vw 0;
+    }
+
+    .ips-contact-us-form label {
+        font-size: 3.6vw;
+    }
+
+    .ips-contact-us-form button {
+        font-size: 5vw;
+        padding: 1.5vw 4vw;
+        border-radius: 2vw;
+        font-weight: 600;
+    }
+}

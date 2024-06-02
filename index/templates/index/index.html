@@ -12,7 +12,11 @@
 
     {% include 'includes/navbars.html' %}
 
-
+    {% if messages %}
+        {% for message in messages %}
+            <p class="messages-style {{ message.tags }}">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
 
     <div class="index-white-space" id="opacity100-onload"></div>
     {% include 'includes/on_loading.html' %}
@@ -155,19 +159,20 @@
 
 
 
-        <section class="index-contactUs-contaier" id="opacity100-onload">
+        <section class="index-contactUs-container" id="opacity100-onload">
+            <div class="messages-style" id="messages-style"></div>
             <div class="index-contactUs-Box">
                 <div class="index-contactUs-p">
                     <img src="/static/images/orange-arrow.png" alt="orange-arrow">
                     <p>برای مشاوره و بازدید رایگان شماره تماس و نام خودتون رو وارد کنید</p>
                 </div>
-                <form class="index-contactUs-form">
+                <div class="index-contactUs-form">
                     <label>نام و نام خانوادگی</label><br>
-                    <input type="text"><br>
+                    <input id="contact-name" type="text"><br>
                     <label>شماره تماس</label><br>
-                    <input type="number"><br>
-                    <button type="submit">ثبت</button>
-                </form>
+                    <input id="contact-number" type="number"><br>
+                    <button type="button" id="create-contact">ثبت</button>
+                </div>
             </div>
         </section>
     </main>
@@ -180,6 +185,7 @@
 
     <script src="/static/Js/gsap/gsap.min.js"></script>
     <script src="/static/Js/gsap/ScrollTrigger.min.js"></script>
+    <script src="/static/Js/contact_us.js"></script>
     <script src="/static/Js/navbars.js"></script>
     <script src="/static/Js/index.js"></script>
 </body>
