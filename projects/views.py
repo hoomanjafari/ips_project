@@ -56,3 +56,34 @@ class IpsProjectDetailsView(View):
         return render(request, 'projects/projects_details.html', {
             'project': project
         })
+
+
+# searching view and it staffs
+class SearchView(View):
+    def get(self, request):
+        if request.GET.get('search'):
+            search = request.GET.get('search')
+            request.session['searched_text'] = search
+        searched_text = request.session.get('searched_text')
+        result = None
+        result_as_title = IpsProjects.objects.filter(project_title__contains=searched_text)
+        result_as_details = IpsProjects.objects.filter(project_details__contains=searched_text)
+        if result_as_title.exists():
+            result = IpsProjects.objects.filter(project_title__contains=searched_text)
+        elif result_as_details.exists():
+            result = IpsProjects.objects.filter(project_details__contains=searched_text)
+        elif result_as_details.exists() and result_as_title.exists():
+            result = IpsProjects.objects.filter(
+                project_title__contains=searched_text, project_details__contains=searched_text
+                )
+        if result is not None:
+            paginator = Paginator(result, 9)
+            page = request.GET.get('page')
+            final_result = paginator.get_page(page)
+            print('result is result :', final_result)
+            return render(request, 'projects/search_result.html', {
+                'projects': final_result, 'search_text': searched_text
+            })
+        return render(request, 'projects/search_result.html', {
+            'projects': result, 'search_text': searched_text
+        })

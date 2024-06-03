@@ -1,11 +1,11 @@
 <section class="search-container" id="search-container">
     <div class="search-box" id="search-box">
-        <form class="search-box-form">
+        <form method="get" action="{% url 'ips-projects:search-result' %}" class="search-box-form">
             <button class="search-container-closeBtn" id="search-container-closeBtn" type="button">
                 <i class="fa fa-window-close"></i>
             </button>
-            <textarea rows="3" placeholder="متن مرطبت با پرژه مورد نظرتون رو بنویسید"></textarea>
-            <button type="button"><i class="fa fa-search"></i></button>
+            <textarea rows="3" name="search" placeholder="متن مرطبت با پرژه مورد نظرتون رو بنویسید"></textarea>
+            <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
 </section>

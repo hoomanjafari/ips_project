@@ -8,4 +8,5 @@ urlpatterns = [
     path('projects_filtering/', views.IpsProjectFilteringView.as_view(), name='projects-filtering'),
     path('filtering_template_change/', views.FilterChangeTemplate.as_view(), name='filtering-template-change'),
     path('ips-project-details/<int:pk>/', views.IpsProjectDetailsView.as_view(), name='ips-project-details'),
+    path('search-result/', views.SearchView.as_view(), name='search-result'),
 ]

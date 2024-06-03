@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه پیدا نشد</title>
+    <link rel="stylesheet" href="/static/Css/navbars.css">
+    <link rel="stylesheet" href="/static/Css/footer.css">
+    <link rel="stylesheet" href="/static/Fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    {% include 'includes/navbars.html' %}
+    <div class="not-found-white-space"></div>
+    <main class="not-found-main-container">
+        <div class="not-found-box">
+            <p class="not-found-p">
+                404
+            </p>
+
+            <p class="not-found-text">
+                متاسفیم، این صفحه وجود ندارد
+            </p>
+
+            <a class="not-found-go-home" href="{% url 'home:home' %}"><i class="fa fa-home"></i> بازگشت به صفحه اصلی </a>
+        </div>
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+
+
+    <style>
+        .not-found-white-space {
+            height: 6vw;
+        }
+
+        .not-found-main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .not-found-box {
+            padding: 2vw;
+            margin: 3vw;
+            text-align: center;
+        }
+
+        .not-found-p {
+            font-size: 9vw;
+            color: #FF7300;
+        }
+
+        .not-found-text {
+            font-size: 2vw;
+            color: #2C3A3E;
+            margin-bottom: 2vw;
+        }
+
+        .not-found-go-home {
+            font-size: 1.6vw;
+            color: #9393ff;
+        }
+
+        .not-found-go-home:hover {
+            color: #2C3A3E;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1023.98px) {
+            .not-found-white-space {
+                height: 8vw;
+            }
+            .not-found-p {
+                font-size: 11vw;
+            }
+
+            .not-found-text {
+                font-size: 4vw;
+                margin-bottom: 4vw;
+            }
+
+            .not-found-go-home {
+                font-size: 3vw;
+            }
+        }
+        @media (max-width: 767.98px) {
+            .not-found-white-space {
+                height: 14vw;
+            }
+            .not-found-p {
+                font-size: 17vw;
+            }
+
+            .not-found-text {
+                font-size: 7vw;
+                margin-bottom: 6vw;
+            }
+
+            .not-found-go-home {
+                font-size: 5vw;
+            }
+        }
+    </style>
+
+    <script src="/static/Js/navbars.js"></script>
+</body>
+</html>

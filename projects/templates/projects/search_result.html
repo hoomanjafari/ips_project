@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتیجه جستجو</title>
+    <link rel="stylesheet" href="/static/Css/project.css">
+</head>
+    <body>
+
+        {% include 'includes/navbars.html' %}
+        {% include 'includes/on_loading.html' %}
+
+        <div class="ips-project-whiteSpace"></div>
+
+        <div class="searched-text">
+            <p>متن وارد شده برای جستجو</p>
+            <p class="searched-text-p">
+                {{ search_text }}
+            </p>
+        </div>
+
+        <main class="ips-projects-main-content">
+            <section class="ips-projects-container" id="ips-projects-container">
+                {% for project in projects %}
+                    <div class="ips-project-box">
+                        <div class="ips-project-img">
+                            <img src="{{ project.project_main_image.url }}" alt="project-image">
+                        </div>
+
+                        <h1 class="ips-project-title">
+                            {{ project.project_title }}
+                        </h1>
+
+                        <p class="ips-project-address">
+                            {{ project.project_address }}
+                        </p>
+
+                        <p class="ips-project-info">
+                            <span>{{ project.project_time_city }}</span>
+                            <i class="fa fa-calendar clr-orange"></i>
+                        </p>
+                        <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">مشاهده پرژه <i class="fa fa-arrow-right clr-orange"></i></a>
+                    </div>
+                {% empty %}
+                    <div class="nothing-is-founded">
+                        <i class="fa fa-ban" aria-hidden="true"></i>
+                        <p>پرژه ای متناسب با درخواست شما پیدا نشد</p>
+                    </div>
+                {% endfor %}
+                <div class="pagination">
+                    <span class="step-links">
+                        {% if projects.has_previous %}
+                            <a title="قبلی" class="paginator-previousBtn" href="?page={{ projects.previous_page_number }}"><i class="fa fa-arrow-left"></i></a>
+                        {% endif %}
+                        {% for i in projects.paginator.page_range %}
+                            {% if i == projects.number%}
+                                <a class="pagination-active-page" href="?page={{ i }}">{{ i }}</a>
+                            {% else %}
+                                <a href="?page={{ i }}">{{ i }}</a>
+                            {% endif %}
+                        {% endfor %}
+                        {% if projects.has_next %}
+                            <a title="بعدی" class="paginator-nextBtn" href="?page={{ projects.next_page_number }}"><i class="fa fa-arrow-right"></i></a>
+                        {% endif %}
+                    </span>
+                </div>
+                <!-- ------------------( more examples )----------------------------------------------------- -->
+            </section>
+        </main>
+
+
+    <script src="/static/Js/gsap/gsap.min.js"></script>
+    <script src="/static/Js/gsap/ScrollTrigger.min.js"></script>
+    <script src="/static/Js/navbars.js"></script>
+    <script src="/static/Js/project.js"></script>
+    </body>
+</html>

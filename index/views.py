@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views import View
 
 
+# ---------------------------------------------------------
+# to rendering these pages
 class HomeView(View):
     def get(self, request):
         return render(request, 'index/index.html',)
@@ -25,3 +27,6 @@ class IpsSpacesHomeDetailsView(View):
 class IpsSpacesOfficeDetailsView(View):
     def get(self, request):
         return render(request, 'index/ips_spaces_office_details.html')
+
+
+# ----------------------------------------------------------------------------
