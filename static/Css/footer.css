@@ -27,7 +27,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     padding: 3vw 0;
-    gap: 14vw;
+    gap: 6vw;
 }
 
 .ips-footer-all-columns {
@@ -44,18 +44,17 @@ li {
     display: flex;
     justify-content: center;
     gap: 6vw;
-    margin-top: 2vw;
+    margin: 2vw 0;
 }
 
 .ips-footer-socialMedia-ul a {
-    color: #363636;
+    color: #FF7300;
     font-size: 2vw;
 }
 
 .ips-footer-socialMedia-ul a:hover {
-    opacity: 60%;
-    color: orange;
-    transition: 0.3s;
+    color: black;
+    transition: 0.1s;
 }
 
 .ips-footer-column a {
@@ -83,6 +82,25 @@ li {
     text-align: center;
 }
 
+.ips-footer-connections {
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-align: center;
+    border-top: 2px solid #FF7300;
+    margin-top: 1vw;
+    padding-top: 1vw;
+    color: #363636;
+}
+
+.ips-footer-connections-p {
+    font-size: 1.6vw;
+    margin: 1vw 0;
+    color: #363636;
+}
+
+.ips-footer-connections-p i {
+    color: #FF7300 !important;
+}
 
 @media (max-width: 767.98px) {
         /* -----------------------------------( ips footer )-------------------------------- */
@@ -92,6 +110,8 @@ li {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 3vw;
+        border-bottom: 2px solid #FF7300;
     }
 
     .ips-footer-image img {
@@ -124,5 +144,23 @@ li {
 
     .all-right-reserved {
         font-size: 2.2vw;
+    }
+
+    .ips-footer-connections {
+        font-size: 4.5vw;
+        margin-top: 1vw;
+        padding-top: 1vw;
+        width: 100%;
+    }
+
+    .ips-footer-connections-p {
+        font-size: 3.6vw;
+        margin: 2vw 0;
+        color: #363636;
+        width: 100%;
+    }
+
+    .ips-footer-connections-p i {
+        color: #FF7300 !important;
     }
 }

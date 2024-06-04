@@ -1,29 +1,34 @@
 <footer class="ips-footer">
     <section class="ips-footer-container">
         <div class="ips-footer-image">
-            <img class="ips-footer-image" src="/static/images/ips-logo.png" alt="ips-logo-image">
+            <img src="/static/images/ips-logo.png" alt="ips-logo-image">
+            <p class="ips-footer-connections">
+                راه های ارتباطی
+            </p>
             <ul class="ips-footer-socialMedia-ul">
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-telegram"></i></a></li>
                 <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             </ul>
+
+            <p class="ips-footer-connections-p"> خیابان طالقانی، پل مشتاقی، ابتدای خیابان باقی زاده، نبش کوچه شقیعی <i class="fa fa-map-marker"></i></p>
+            <p class="ips-footer-connections-p">0918 161 7958 <i class="fa fa-mobile"></i> </p>
+            <p class="ips-footer-connections-p">086 32772308 <i class="fa fa-phone"></i> </p>
         </div>
         <div class="ips-footer-all-columns">
             <div class="ips-footer-column">
                 <h1><span class="clr-orange">IPS</span> پرژه های</h1>
-                <a href="#">بازسازی و دکراسیون داخلی</a>
-                <a href="#">صفر تا صد ساختمان سازی</a>
-                <a href="#">نما سازی</a>
+                <a href="{% url 'ips-projects:ips-projects' %}">بازسازی و دکراسیون داخلی</a>
+                <a href="{% url 'ips-projects:ips-projects' %}">صفر تا صد ساختمان سازی</a>
+                <a href="{% url 'ips-projects:ips-projects' %}">نما سازی</a>
             </div>
             <div class="ips-footer-column">
                 <h1><span class="clr-orange">IPS</span> زمینه های فعالیت</h1>
-                <a href="#">اتاق انتظار</a>
-                <a href="#">کافه و رستوران</a>
-                <a href="#">منزل</a>
-                <a href="#">نما سازی</a>
-                <a href="#">جلسات</a>
-                <a href="#">محل کار</a>
+                <a href="{% url 'home:ips-spaces-facade' %}"> نما سازی و صفر تا صد ساختمان سازی</a>
+                <a href="{% url 'home:ips-spaces-restaurant' %}">کافه و رستوران</a>
+                <a href="{% url 'home:ips-spaces-home' %}">منزل و ویلا</a>
+                <a href="{% url 'home:ips-spaces-home' %}">محل کار</a>
             </div>
         </div>
     </section>
