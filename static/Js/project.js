@@ -56,6 +56,7 @@ const csrftoken = getCookie('csrftoken');
 const project_filtering = document.querySelectorAll('#project-filtering');
 const ips_projects_container = document.getElementById('ips-projects-container');
 const project_filtering_label = document.querySelectorAll('.project-filtering-label');
+const this_language = document.getElementById('this-language').innerHTML;
 
 // to give 100 opacity to all the boxes on scroll trigger
 function test(){
@@ -79,7 +80,7 @@ function test(){
 
 // to show the template of the selected filter
 function filteringChangeTemplate() {
-    fetch('/ips-projects/filtering_template_change/', {
+    fetch(`/${this_language}/ips-projects/filtering_template_change/`, {
         method: 'GET',
     })
     .then(res => res.text())
@@ -90,10 +91,10 @@ function filteringChangeTemplate() {
         test()
     })
 }
-
+console.log('get_current_language is ', this_language)
 // to take the selected filter id_number and send it to server for query
 function projectFiltering(id) {
-    fetch('/ips-projects/projects_filtering/', {
+    fetch(`/${this_language}/ips-projects/projects_filtering/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -139,7 +140,6 @@ project_filtering.forEach(item => {
 
 // with this function on the template that is created for filtered projects, user can change the pages if there are more pages for that specific project
 function goToPage(page_number) {
-    console.log('mona monaa is', page_number)
     fetch(`/ips-projects/filtering_template_change/?page=${page_number}`, {
         method: 'GET',
     })

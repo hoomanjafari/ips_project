@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-09 15:26+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\apps.py:8 .\models.py:27
+msgid "پرژه ها"
+msgstr "projects"
+
+#: .\models.py:6
+msgid "عنوان پرژه"
+msgstr "project title"
+
+#: .\models.py:7
+msgid "سال و شهر"
+msgstr "city / year"
+
+#: .\models.py:8
+msgid "ادرس پرژه"
+msgstr "project full-address"
+
+#: .\models.py:9
+msgid "عکس اصلی پرژه"
+msgstr "project main-image"
+
+#: .\models.py:10
+msgid "توضیحات پرژه"
+msgstr "project details"
+
+#: .\models.py:13
+msgid "خانه و ویلا"
+msgstr "home"
+
+#: .\models.py:14 .\templates\projects\project.html:54
+msgid "نما سازی"
+msgstr "facade"
+
+#: .\models.py:15
+msgid "صفر تا صد"
+msgstr "zero to hundred"
+
+#: .\models.py:16
+msgid "رستوران و کافه"
+msgstr "restaurant"
+
+#: .\models.py:17
+msgid "محل کار"
+msgstr "office"
+
+#: .\models.py:19
+msgid "عکس 1"
+msgstr "image-1"
+
+#: .\models.py:20
+msgid "عکس 2"
+msgstr "image-2"
+
+#: .\models.py:21
+msgid "عکس 3"
+msgstr "image-3"
+
+#: .\models.py:22
+msgid "عکس 4"
+msgstr "image-4"
+
+#: .\models.py:23
+msgid "عکس 5"
+msgstr "image-5"
+
+#: .\models.py:24
+msgid "عکس 6"
+msgstr "image-6"
+
+#: .\models.py:28
+msgid "پرژه"
+msgstr "project"
+
+#: .\templates\projects\project.html:26
+msgid " برخی از پرژه های تکمیل شده با جزئیات  و نوع معماری ان ها"
+msgstr "Some completed projects with their details and architecture"
+
+#: .\templates\projects\project.html:34
+msgid "همه پرژه ها"
+msgstr "All projects"
+
+#: .\templates\projects\project.html:38
+msgid "اداری و مطب"
+msgstr "Office"
+
+#: .\templates\projects\project.html:42
+msgid "کافی شاپ و رستوران"
+msgstr "Restaurant & Coffe"
+
+#: .\templates\projects\project.html:46
+#, fuzzy
+#| msgid "خانه و ویلا"
+msgid "منزل و ویلا"
+msgstr "home"
+
+#: .\templates\projects\project.html:50
+msgid "صفر تا صد ساختمان سازی"
+msgstr "Zero to one hundred construction"
+
+#: .\templates\projects\project.html:77
+#: .\templates\projects\projects_filtering.html:21
+#: .\templates\projects\search_result.html:46
+
+msgid "مشاهده پرژه "
+msgstr "See The Project "
+
+#: .\templates\projects\projects_details.html:9
+msgid "حیطه های کاری"
+msgstr "Spaces"
+
+#: .\templates\projects\projects_details.html:26
+msgid "برو به صفحه قبلی"
+msgstr "Go Previous Page"
+
+#: .\templates\projects\projects_filtering.html:27
+#: .\templates\projects\search_result.html:57
+msgid "قبلی"
+msgstr "Previous"
+
+#: .\templates\projects\projects_filtering.html:37
+#: .\templates\projects\search_result.html:67
+msgid "بعدی"
+msgstr "Next"
+
+#: .\templates\projects\search_result.html:9
+msgid "نتیجه جستجو"
+msgstr "Search Result"
+
+#: .\templates\projects\search_result.html:20
+msgid "متن وارد شده برای جستجو"
+msgstr "Entered Text To Search"
+
+#: .\templates\projects\search_result.html:51
+msgid "پرژه ای متناسب با درخواست شما پیدا نشد"
+msgstr "There is no such a project"

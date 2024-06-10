@@ -51,7 +51,7 @@ li {
 }
 
 .ips-logo img {
-    width: 6vw;
+    width: 6.6vw;
 }
 
 .main-navbar-ul-a:hover,
@@ -60,6 +60,28 @@ li {
 .search-box button:hover {
     opacity: 60%;
     transition: 0.3s;
+}
+
+.main-navbar-right-side {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.main-navbar-lang-switcher {
+    padding: 0.5vw;
+    font-size: 1.3vw;
+    border: 2px solid orange;
+    border-radius: 0.5vw;
+    color: #363636;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-navbar-lang-switcher option {
+    color: #FF7300;
+    transition: 0.3s !important;
 }
 
 .search-btn {
@@ -78,7 +100,7 @@ li {
 }
 
 .services-btn:hover .services-content {
-    height: 14vw;
+    height: 20vw;
 }
 
 .services-btn i {
@@ -322,6 +344,17 @@ li {
     .index-white-space {
         height: 9vw;
     }
+
+    .tablet-mobile-navbar-rightSide button {
+        font-size: 4vw;
+    }
+
+    .main-navbar-lang-switcher {
+        padding: 1vw;
+        font-size: 2vw;
+        border: 2px solid orange;
+        border-radius: 1vw;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -330,7 +363,7 @@ li {
     }
 
     .tablet-mobile-navbar-rightSide button {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 
     .tablet-mobile-menubar-a {
@@ -372,5 +405,16 @@ li {
     .search-container-closeBtn {
         margin: 0 !important;
         font-size: 6vw !important;
+    }
+
+    .main-navbar-right-side {
+        justify-content: center;
+    }
+
+    .main-navbar-lang-switcher {
+        padding: 1vw;
+        font-size: 4vw;
+        border: 2px solid orange;
+        border-radius: 1vw;
     }
 }

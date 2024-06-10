@@ -10,7 +10,11 @@ const services_dropDown_btn = document.getElementById('services-dropDown-btn'),
     search_box = document.getElementById('search-box'),
     search_container = document.getElementById('search-container'),
     search_openBtn = document.getElementById('search-openBtn'),
-    tablet_mobile_search_openBtn = document.getElementById("tablet-mobile-search-openBtn");
+    tablet_mobile_search_openBtn = document.getElementById("tablet-mobile-search-openBtn"),
+    main_navbar_lang_switcher_btn = document.getElementById('main-navbar-lang-switcher-btn'),
+    main_navbar_lang_switcher = document.getElementById('main-navbar-lang-switcher'),
+    mobile_navbar_lang_switcher_btn = document.getElementById('mobile-navbar-lang-switcher-btn'),
+    mobile_navbar_lang_switcher = document.getElementById('mobile-navbar-lang-switcher');
 
 
 // to main navbar hidden and appearing
@@ -97,4 +101,14 @@ tablet_mobile_search_openBtn.addEventListener('click', () => {
     setTimeout(() => {
         search_box.style.width = '70vw'
     }, 300)
+})
+
+
+
+// to submit and switch the language when language options change
+main_navbar_lang_switcher.addEventListener('change', () => {
+    main_navbar_lang_switcher_btn.form.submit()
+})
+mobile_navbar_lang_switcher.addEventListener('change', () => {
+    mobile_navbar_lang_switcher_btn.form.submit()
 })

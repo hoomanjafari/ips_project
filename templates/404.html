@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
+{% load i18n %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه پیدا نشد</title>
+    {% if LANGUAGE_BIDI %}
+        <title>صفحه پیدا نشد</title>
+    {% else %}
+        <title>Page Not Found</title>
+    {% endif %}
     <link rel="stylesheet" href="/static/Css/navbars.css">
     <link rel="stylesheet" href="/static/Css/footer.css">
     <link rel="stylesheet" href="/static/Fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -19,10 +26,18 @@
             </p>
 
             <p class="not-found-text">
+                {% if LANGUAGE_BIDI %}
                 متاسفیم، این صفحه وجود ندارد
+                {% else %}
+                Sorry this page does not exist
+                {% endif %}
             </p>
 
+            {% if LANGUAGE_BIDI %}
             <a class="not-found-go-home" href="{% url 'home:home' %}"><i class="fa fa-home"></i> بازگشت به صفحه اصلی </a>
+            {% else %}
+            <a class="not-found-go-home" href="{% url 'home:home' %}"><i class="fa fa-home"></i> Go to Home Page </a>
+            {% endif %}
         </div>
     </main>
 

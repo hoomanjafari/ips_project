@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-09 12:28+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\index\index.html:26
+msgid "شرکت مهندسی"
+msgstr "Engineering Company"
+
+#: .\templates\index\index.html:27
+msgid ""
+"در زمینه طراحی و مجری پرژه های لوکس ساختمانی با پیش از بیست و پنج سال سابقه "
+"درخشان در خدمات شما باشد"
+msgstr ""
+"is at your service in the field of designing and implementing luxury "
+"construction projects with twenty-five years of brilliant experience"
+
+#: .\templates\index\index.html:35
+msgid "حیطه های کاری"
+msgstr "Spaces"
+
+#: .\templates\index\index.html:45
+msgid "نما سازی و صفر تا صد ساختمان سازی"
+msgstr "Facade & Zero to one hundred construction"
+
+#: .\templates\index\index.html:52 .\templates\index\index.html:71
+#: .\templates\index\index.html:87 .\templates\index\index.html:104
+msgid "توضیحات بیشتر"
+msgstr "More Info"
+
+#: .\templates\index\index.html:62
+msgid "کافه و رستوران"
+msgstr "Restaurant & Coffe"
+
+#: .\templates\index\index.html:79
+msgid "منزل و ویلا"
+msgstr "Home"
+
+#: .\templates\index\index.html:97
+msgid "محل کار"
+msgstr "Office"
+
+#: .\templates\index\index.html:115
+msgid "پرژه های"
+msgstr "Projects"
+
+#: .\templates\index\index.html:125 .\templates\index\index.html:137
+#: .\templates\index\index.html:149
+msgid "مشاهده پرژه ها"
+msgstr "See the Projects"
+
+#: .\templates\index\index.html:128
+msgid "باسازی و دکراسیون داخلی"
+msgstr "Reconstruction and interior decoration"
+
+#: .\templates\index\index.html:140
+msgid "صفر تا صد ساختمان سازی"
+msgstr "Zero to one hundred construction"
+
+#: .\templates\index\index.html:152
+msgid "نما سازی"
+msgstr "Facade"
+
+#: .\templates\index\index.html:165
+msgid "برای مشاوره و بازدید رایگان شماره تماس و نام خودتون رو وارد کنید"
+msgstr "Enter your name and mobile number for free consultation and visit"
+
+#: .\templates\index\index.html:168
+msgid "نام و نام خانوادگی"
+msgstr "Full-name"
+
+#: .\templates\index\index.html:170
+msgid "شماره تماس"
+msgstr "Mobile-number"
+
+#: .\templates\index\index.html:172
+msgid "ثبت"
+msgstr "Send"
+
+msgid "برو به صفحه قبلی"
+msgstr "Go Previous Page"
+
+msgid "درباره"
+msgstr "About"
+
+msgid "ارتباط با ما"
+msgstr "Contact Us"
+
+msgid "پرژه ها"
+msgstr "Projects"
+
+msgid "خدمات"
+msgstr "Services"
+
+msgid "متن مرطبت با پرژه مورد نظرتون رو بنویسید"
+msgstr "Search what ever about projects in here"
+
+#: .\includes\footer.html:6
+msgid "راه های ارتباطی"
+msgstr "Cotact Us"
+
+#: .\includes\footer.html:14
+msgid "خیابان طالقانی، پل مشتاقی، ابتدای خیابان باقی زاده، نبش کوچه شفیعی"
+msgstr "Taleghani St., Mushtaqhi Bridge, the beginning of Baghizadeh St., corner of Shafi'i Alley"
+
+#: .\includes\footer.html:26
+msgid " زمینه های فعالیت"
+msgstr "Fields of activity "
+
+#: .\includes\footer.html:34
+msgid "تمامی حقوق مادی و معنوی این وبسایت برای شرکت مهندس ای پی اس می باشد"
+msgstr "All rights reserved"
+
+
+#: .\includes\footer.html:21
+msgid "بازسازی و دکراسیون داخلی"
+msgstr "Reconstruction and interior decoration"
+
+msgid " پرژه های"
+msgstr "Projects "

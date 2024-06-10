@@ -1,37 +1,35 @@
+{% load i18n %}
 <footer class="ips-footer">
     <section class="ips-footer-container">
         <div class="ips-footer-image">
             <img src="/static/images/ips-logo.png" alt="ips-logo-image">
-            <p class="ips-footer-connections">
-                راه های ارتباطی
-            </p>
+            <p class="ips-footer-connections">{% translate 'راه های ارتباطی' %}</p>
             <ul class="ips-footer-socialMedia-ul">
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-telegram"></i></a></li>
-                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="ips-footer-whatsapp"><p><i class="fa fa-whatsapp"></i> +98 918 161 7958 </p></li>
             </ul>
 
-            <p class="ips-footer-connections-p"> خیابان طالقانی، پل مشتاقی، ابتدای خیابان باقی زاده، نبش کوچه شقیعی <i class="fa fa-map-marker"></i></p>
+            <p class="ips-footer-connections-p"><i class="fa fa-map-marker"></i> {% translate 'خیابان طالقانی، پل مشتاقی، ابتدای خیابان باقی زاده، نبش کوچه شفیعی' %}</p>
             <p class="ips-footer-connections-p">0918 161 7958 <i class="fa fa-mobile"></i> </p>
             <p class="ips-footer-connections-p">086 32772308 <i class="fa fa-phone"></i> </p>
         </div>
         <div class="ips-footer-all-columns">
             <div class="ips-footer-column">
-                <h1><span class="clr-orange">IPS</span> پرژه های</h1>
-                <a href="{% url 'ips-projects:ips-projects' %}">بازسازی و دکراسیون داخلی</a>
-                <a href="{% url 'ips-projects:ips-projects' %}">صفر تا صد ساختمان سازی</a>
-                <a href="{% url 'ips-projects:ips-projects' %}">نما سازی</a>
+                <h1><span class="clr-orange">IPS</span> {% translate ' پرژه های' %} </h1>
+                <a href="{% url 'ips-projects:ips-projects' %}">{% translate 'بازسازی و دکراسیون داخلی' %}</a>
+                <a href="{% url 'ips-projects:ips-projects' %}">{% translate 'صفر تا صد ساختمان سازی' %}</a>
+                <a href="{% url 'ips-projects:ips-projects' %}">{% translate 'نما سازی' %}</a>
             </div>
             <div class="ips-footer-column">
-                <h1><span class="clr-orange">IPS</span> زمینه های فعالیت</h1>
-                <a href="{% url 'home:ips-spaces-facade' %}"> نما سازی و صفر تا صد ساختمان سازی</a>
-                <a href="{% url 'home:ips-spaces-restaurant' %}">کافه و رستوران</a>
-                <a href="{% url 'home:ips-spaces-home' %}">منزل و ویلا</a>
-                <a href="{% url 'home:ips-spaces-home' %}">محل کار</a>
+                <h1><span class="clr-orange">IPS</span> {% translate ' زمینه های فعالیت' %} </h1>
+                <a href="{% url 'home:ips-spaces-facade' %}">{% translate 'نما سازی و صفر تا صد ساختمان سازی' %}</a>
+                <a href="{% url 'home:ips-spaces-restaurant' %}">{% translate 'کافه و رستوران' %}</a>
+                <a href="{% url 'home:ips-spaces-home' %}">{% translate 'منزل و ویلا' %}</a>
+                <a href="{% url 'home:ips-spaces-home' %}">{% translate 'محل کار' %}</a>
             </div>
         </div>
     </section>
-    <h1 class="all-right-reserved">تمامی حقوق مادی و معنوی این وبسایت برای شرکت مهندس ای پی اس می باشد</h1>
+    <h1 class="all-right-reserved">{% translate 'تمامی حقوق مادی و معنوی این وبسایت برای شرکت مهندس ای پی اس می باشد' %}</h1>
     <h1 class="all-right-reserved">Copyright © 2024 hoseinifinance.com All rights reserved</h1>
 </footer>

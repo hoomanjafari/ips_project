@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load i18n %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حیطه های کاری</title>
+    {% if LANGUAGE_BIDI %}
+        <title>جزئیات پرژه</title>
+    {% else %}
+        <title>Project Details</title>
+    {% endif %}
     <link rel="stylesheet" href="/static/Css/services.css">
 </head>
 
 <body>
+
 
     {% include 'includes/on_loading.html' %}
 
@@ -20,7 +27,7 @@
         <div class="go-to-previous-page">
             <button type="button" onclick="window.history.go(-1); return false;">
                 <i class="fa fa-arrow-left"></i>
-                برو به صفحه قبلی
+                {% translate 'برو به صفحه قبلی' %}
             </button>
         </div>
 

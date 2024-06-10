@@ -33,7 +33,12 @@ li {
 .ips-footer-all-columns {
     display: flex;
     justify-content: center;
-    gap: 14vw;
+    gap: 3vw;
+    width: calc(calc(100% / 2) - 6vw);
+}
+
+.ips-footer-image {
+    width: calc(calc(100% / 2) - 12vw);
 }
 
 .ips-footer-image img {
@@ -54,7 +59,19 @@ li {
 
 .ips-footer-socialMedia-ul a:hover {
     color: black;
-    transition: 0.1s;
+    transition: 0.1s !important;
+}
+
+.ips-footer-socialMedia-ul p {
+    font-size: 1.3vw;
+    color: #363636;
+    font-weight: 600;
+    font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace !important;
+}
+
+.ips-footer-whatsapp i {
+    color: #FF7300;
+    font-size: 2vw;
 }
 
 .ips-footer-column a {

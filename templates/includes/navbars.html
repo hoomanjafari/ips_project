@@ -1,10 +1,11 @@
+{% load i18n %}
 <section class="search-container" id="search-container">
     <div class="search-box" id="search-box">
         <form method="get" action="{% url 'ips-projects:search-result' %}" class="search-box-form">
             <button class="search-container-closeBtn" id="search-container-closeBtn" type="button">
                 <i class="fa fa-window-close"></i>
             </button>
-            <textarea rows="3" name="search" placeholder="متن مرطبت با پرژه مورد نظرتون رو بنویسید"></textarea>
+            <textarea rows="3" name="search" placeholder="{% translate 'متن مرطبت با پرژه مورد نظرتون رو بنویسید' %}"></textarea>
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
@@ -17,34 +18,77 @@
             <img src="/static/images/ips-main-logo.jpg" alt="ips-logo">
         </a>
         <ul class="main-navbar-ul">
-            <li><a class="main-navbar-ul-a" href="{% url 'about-us:about-us' %}"><span class="clr-orange">IPS</span> درباره</a></li>
-            <li><a class="main-navbar-ul-a" href="{% url 'contact-us:contact-us' %}">ارتباط با ما</a></li>
-            <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">پرژه ها</a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'about-us:about-us' %}">
+                {% if LANGUAGE_BIDI %}<span class="clr-orange">IPS</span> درباره
+                {% else %}
+                    ABOUT <span class="clr-orange">IPS</span>
+                {% endif %}
+            </a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'contact-us:contact-us' %}">{% translate 'ارتباط با ما' %}</a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">{% translate 'پرژه ها' %}</a></li>
             <li>
                 <div class="services-btn">
-                    خدمات
+                    {% blocktranslate %}خدمات{% endblocktranslate %}
                     <span class="clr-orange"><i class="fa fa-arrow-down"></i></span>
                     <div class="services-content">
-                        <a href="{% url 'home:ips-spaces-facade' %}">نما سازی و صفر تا صد ساختمان سازی</a>
-                        <a href="{% url 'home:ips-spaces-restaurant' %}">کافه و رستوران</a>
-                        <a href="{% url 'home:ips-spaces-home' %}">منزل و ویلا</a>
-                        <a href="{% url 'home:ips-spaces-office' %}">محل کار</a>
+                        <a href="{% url 'home:ips-spaces-facade' %}">{% translate 'نما سازی و صفر تا صد ساختمان سازی' %}</a>
+                        <a href="{% url 'home:ips-spaces-restaurant' %}">{% translate 'کافه و رستوران' %}</a>
+                        <a href="{% url 'home:ips-spaces-home' %}">{% translate 'منزل و ویلا' %}</a>
+                        <a href="{% url 'home:ips-spaces-office' %}">{% translate 'محل کار' %}</a>
                     </div>
                 </div>
             </li>
         </ul>
-        <button class="search-btn" id="search-openBtn" type="button"><i class="fa fa-search"></i></button>
+
+        <div class="main-navbar-right-side">
+            <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}">
+                <select class="main-navbar-lang-switcher" id="main-navbar-lang-switcher" name="language">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                            {{ language.name_local }} ({{ language.code }})
+                        </option>
+                    {% endfor %}
+                </select>
+                <input type="submit" id="main-navbar-lang-switcher-btn" value="Go" hidden="hidden">
+            </form>
+            <button class="search-btn" id="search-openBtn" type="button"><i class="fa fa-search"></i></button>
+        </div>
+
     </nav>
 
     <nav class="tablet-mobile-navbar">
         <a class="tablet-mobile-ips-logo" href="{% url 'home:home' %}"><span class="clr-orange">I</span>PS</a>
         <div class="tablet-mobile-navbar-rightSide">
-            <button id="tablet-mobile-search-openBtn" type="button">
-                <span class="clr-orange">
-                    <i class="fa fa-search"></i>
-                </span>
-            </button>
-            <button id="tablet-mobile-open-menuBar-btn" type="button"><i class="fa fa-bars"></i></button>
+
+            <div class="main-navbar-right-side">
+
+                <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                    <select class="main-navbar-lang-switcher" id="mobile-navbar-lang-switcher" name="language">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                {{ language.name_local }} ({{ language.code }})
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" id="mobile-navbar-lang-switcher-btn" value="Go" hidden="hidden">
+                </form>
+
+                  <button id="tablet-mobile-search-openBtn" type="button">
+                    <span class="clr-orange">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </button>
+
+                <button id="tablet-mobile-open-menuBar-btn" type="button"><i class="fa fa-bars"></i></button>
+            </div>
         </div>
     </nav>
 
@@ -60,26 +104,26 @@
                     </a>
                 </div>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="{% url 'about-us:about-us' %}">درباره <span class="clr-orange">IPS</span></a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'about-us:about-us' %}"> {% translate 'درباره' %}<span class="clr-orange">IPS</span></a>
                     <i class="fa fa-info"></i>
                 </li>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="{% url 'contact-us:contact-us' %}">ارتباط با ما</a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'contact-us:contact-us' %}">{% translate 'ارتباط با ما' %}</a>
                     <i class="fa fa-handshake-o"></i>
                 </li>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="{% url 'ips-projects:ips-projects' %}">پرژه ها</a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'ips-projects:ips-projects' %}">{% translate 'پرژه ها' %}</a>
                     <i class="fa fa-building"></i>
                 </li>
                 <li>
                     <div class="services-dropDown-btn" id="services-dropDown-btn">
-                        خدمات
+                        {% blocktranslate %}خدمات{% endblocktranslate %}
                         <i id="dropdown-arrow" class="fa fa-arrow-down"></i>
                         <div class="project-dropdown-services" id="services-dropdown-content">
-                            <a href="{% url 'home:ips-spaces-facade' %}">نما سازی و صفر تا صد ساختمان سازی</a>
-                            <a href="{% url 'home:ips-spaces-restaurant' %}">کافه و رستوران</a>
-                            <a href="{% url 'home:ips-spaces-home' %}">منزل و ویلا</a>
-                            <a href="{% url 'home:ips-spaces-office' %}">محل کار</a>
+                            <a href="{% url 'home:ips-spaces-facade' %}">{% translate 'نما سازی و صفر تا صد ساختمان سازی' %}</a>
+                            <a href="{% url 'home:ips-spaces-restaurant' %}">{% translate 'کافه و رستوران' %}</a>
+                            <a href="{% url 'home:ips-spaces-home' %}">{% translate 'منزل و ویلا' %}</a>
+                            <a href="{% url 'home:ips-spaces-office' %}">{% translate 'محل کار' %}</a>
                         </div>
                     </div>
                     <i class="fa fa-paperclip" id="fa-paperclip"></i>
@@ -88,3 +132,15 @@
         </div>
     </div>
 </section>
+
+<style>
+    {% if LANGUAGE_BIDI %}
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    {% else %}
+        * {
+            font-family: "Segoe UI", system-ui, sans-serif;
+        }
+    {% endif %}
+</style>

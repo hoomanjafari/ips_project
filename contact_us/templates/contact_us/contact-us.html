@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load i18n %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ارتباط با ما</title>
+    {% if LANGUAGE_BIDI %}
+        <title>ارتباط با ما</title>
+    {% else %}
+        <title>Contact Us</title>
+    {% endif %}
     <link rel="stylesheet" href="/static/Css/contact-us.css">
 </head>
 
@@ -23,18 +29,20 @@
             <div class="ips-contact-us-form-box">
 
                 <p class="ips-contact-us-p">
-                    ما دوست داریم نظر شما در مورد خدمات مشتری، وب سایت یا هر موضوعی که می خواهید با ما به اشتراک
-                    بگذارید، بشنویم پس از نظرات و پیشنهادات شما قدردانی خواهد شد
+                    {% blocktranslate %}
+                        ما دوست داریم نظر شما در مورد خدمات مشتری، وب سایت یا هر موضوعی که می خواهید با ما به اشتراک
+                        بگذارید، بشنویم پس از نظرات و پیشنهادات شما قدردانی خواهد شد
+                    {% endblocktranslate %}
                 </p>
 
                 <div class="ips-contact-us-form">
-                    <label>نام و نام خانوادگی</label>
+                    <label>{% translate 'نام و نام خانوادگی' %}</label>
                     <input name="name" id="contact-name" type="text">
-                    <label>شماره تماس</label>
+                    <label>{% translate 'شماره تماس' %}</label>
                     <input name="number" id="contact-number" type="number">
-                    <label>پیام </label>
+                    <label>{% translate 'پیام' %}</label>
                     <textarea name="message" id="contact-message" rows="4"></textarea><br>
-                    <button type="button" id="create-contact">ثبت</button>
+                    <button type="button" id="create-contact">{% translate 'ثبت' %}</button>
                 </div>
             </div>
         </main>

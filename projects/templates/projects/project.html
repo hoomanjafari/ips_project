@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load i18n %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پرژه ها</title>
+    {% if LANGUAGE_BIDI %}
+        <title>پرژه ها</title>
+    {% else %}
+        <title>Projects</title>
+    {% endif %}
     <link rel="stylesheet" href="/static/Css/project.css">
 </head>
 
 <body>
+    {% get_current_language as current_lang %}
+    <p id="this-language" style="display: none">{{ current_lang }}</p>
+
 
     {% include 'includes/navbars.html' %}
 
@@ -17,8 +26,12 @@
     <div class="ips-project-whiteSpace"></div>
 
     <header class="ips-projects-header">
-        <h1>IPS پرژه های</h1>
-        <h2> برخی از پرژه های تکمیل شده با جزئیات  و نوع معماری ان ها</h2>
+        {% if LANGUAGE_BIDI %}
+            <h1>IPS پرژه های</h1>
+        {% else %}
+            <h1>IPS Projects</h1>
+        {% endif %}
+        <h2>{% translate ' برخی از پرژه های تکمیل شده با جزئیات  و نوع معماری ان ها' %}</h2>
     </header>
 
     <main class="ips-projects-main-content">
@@ -26,27 +39,27 @@
             <form>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="1">
-                    <span>همه پرژه ها</span>
+                    <span>{% translate 'همه پرژه ها' %}</span>
                 </label>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="2">
-                    <span>اداری و مطب</span>
+                    <span>{% translate 'اداری و مطب' %}</span>
                 </label>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="3">
-                    <span>کافی شاپ و رستوران</span>
+                    <span>{% translate 'کافی شاپ و رستوران' %}</span>
                 </label>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="4">
-                    <span>منزل و ویلا</span>
+                    <span>{% translate 'منزل و ویلا' %}</span>
                 </label>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="5">
-                    <span>صفر تا صد ساختمان سازی</span>
+                    <span>{% translate 'صفر تا صد ساختمان سازی' %}</span>
                 </label>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="6">
-                    <span>نما سازی</span>
+                    <span>{% translate 'نما سازی' %}</span>
                 </label>
             </form>
         </div>
@@ -69,7 +82,7 @@
                         <span>{{ project.project_time_city }}</span>
                         <i class="fa fa-calendar clr-orange"></i>
                     </p>
-                    <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">مشاهده پرژه <i class="fa fa-arrow-right clr-orange"></i></a>
+                    <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">{% translate 'مشاهده پرژه ' %}<i class="fa fa-arrow-right clr-orange"></i></a>
                 </div>
             {% endfor %}
             <div class="pagination">

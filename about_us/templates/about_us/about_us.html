@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load i18n %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>درباره IPS</title>
+    {% if LANGUAGE_BIDI %}
+        <title>درباره IPS</title>
+    {% else %}
+        <title>About IPS</title>
+    {% endif %}
     <link rel="stylesheet" href="/static/Css/about_us.css">
 </head>
 
@@ -29,7 +35,11 @@
         <main class="ips-about-us-main-content">
             <section class="ips-about-us-swiper" id="about-us-on-scroll-event">
                 <div class="ips-about-us-border" id="ips-about-us-border">
-                    <p><span class="clr-orange">کا</span>تالوگ <span class="clr-orange">پر</span>ژه ها</p>
+                    {% if LANGUAGE_BIDI %}
+                        <p><span class="clr-orange">کا</span>تالوگ<span class="clr-orange"> پر</span>ژه ها</p>
+                    {% else %}
+                        <p><span class="clr-orange">P</span>rojects <span class="clr-orange">C</span>atalog</p>
+                    {% endif %}
                 </div>
                 <swiper-container style="--swiper-navigation-color: orange; --swiper-pagination-color: orange;
                  --swiper-navigation-size: 6vw"
@@ -54,22 +64,28 @@
             
             <section class="ips-about-us-information-container">
                 <div class="ips-about-us-border" id="ips-about-us-border">
-                    <p><span class="orange-clr">I</span>sta <span class="orange-clr">P</span>ey <span class="orange-clr">S</span> hahbaz</p>
+                    <p><span class="orange-clr">I</span>sta <span class="orange-clr">P</span>ey <span class="orange-clr">S</span>hahbaz</p>
                 </div>
                 <div class="ips-about-us-information-box">
                     <div class="ips-about-us-information-box-left-side" id="about-us-on-scroll-event">
                         <img src="/static/images/about-us-information2.jpg" alt="about-us-image">
                     </div>
 
-                    <div class="ips-about-us-information-box-right-side" id="about-us-on-scroll-event">
-                        <h1>شرکت <span class="orange-clr">IPS</span></h1>
+                    <div class="ips-about-us-information-box-right-side" {% if not LANGUAGE_BIDI %}style="text-align: left" {% endif %} id="about-us-on-scroll-event">
+                        {% if LANGUAGE_BIDI %}
+                            <h1>{% translate 'شرکت ' %}<span class="orange-clr">IPS</span></h1>
+                        {% else %}
+                            <h1 dir="ltr"><span class="orange-clr">IPS </span>{% translate 'شرکت ' %}</h1>
+                        {% endif %}
                         <h2>
-                            به همراه جمعی از طراحان خوش فکر و صاحب سبک با مدیریت مهندس فرهاد بیاتی در حال فعالیت است و محور فعالیت های شرکت شامل
-                            تحلیل، طراحی، اجرا، نظارت و مشاوره در زمینه های دکراسیون داخلی، نما های سنتی و مدرن، باسازی
-                            و بهسازی بنا ها و بافت های فرسوده، پرژه های ساختمانی و عمرانی و ... می باش. این شرکت با بهره
-                            گیری از مجموعه ای ارزشمند از دانش فنی و نیروی انسانی متخصص در طراحی و اجرای بهترو مناسب تر
-                            عناصر موجود در فضای طرح، گامی بلند در این عرصه برداشته و با تلفیق سبک های مختلف هنری، در
-                            ارائه طرح های فنی، خلاقانه و مدرن پیشرو میباشد
+                            {% blocktranslate %}
+                                به همراه جمعی از طراحان خوش فکر و صاحب سبک با مدیریت مهندس فرهاد بیاتی در حال فعالیت است و محور فعالیت های شرکت شامل
+                                تحلیل، طراحی، اجرا، نظارت و مشاوره در زمینه های دکراسیون داخلی، نما های سنتی و مدرن، باسازی
+                                و بهسازی بنا ها و بافت های فرسوده، پرژه های ساختمانی و عمرانی و ... می باش. این شرکت با بهره
+                                گیری از مجموعه ای ارزشمند از دانش فنی و نیروی انسانی متخصص در طراحی و اجرای بهترو مناسب تر
+                                عناصر موجود در فضای طرح، گامی بلند در این عرصه برداشته و با تلفیق سبک های مختلف هنری، در
+                                ارائه طرح های فنی، خلاقانه و مدرن پیشرو میباشد
+                            {% endblocktranslate %}
                         </h2>
                     </div>
                 </div>

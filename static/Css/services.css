@@ -22,16 +22,19 @@
 }
 
 .go-to-previous-page button {
-    background: none;
-    border: none;
     font-size: 2vw;
     cursor: pointer;
     color: crimson;
+    background-color: #ffeff2;
+    padding: 1vw 2vw;
+    border: 2px solid crimson;
+    border-radius: 1vw;
 }
 
 .go-to-previous-page button:hover {
-    transform: translateX(-9px);
-    transition: 0.4s;
+    background-color: crimson;
+    color: white;
+    transition: 0.2s;
 }
 
 .go-to-previous-page button:active {
@@ -59,7 +62,7 @@
 }
 
 .ips-spaces-main-container {
-    width: 90%;
+    width: 70vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

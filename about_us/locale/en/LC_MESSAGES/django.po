@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-09 14:36+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\apps.py:8
+msgid "درباره ما"
+msgstr "about us"
+
+#: .\models.py:6
+msgid "عکس کاتالوگ"
+msgstr "catalog image"
+
+#: .\models.py:9
+msgid "کاتالوک"
+msgstr "catalog"
+
+#: .\models.py:10
+msgid "کاتالوگ ها"
+msgstr "catalogs"
+
+#: .\templates\about_us\about_us.html:70
+msgid "شرکت "
+msgstr "Company"
+
+#: .\templates\about_us\about_us.html:72
+msgid ""
+"\n"
+"                                به همراه جمعی از طراحان خوش فکر و صاحب سبک "
+"با مدیریت مهندس فرهاد بیاتی در حال فعالیت است و محور فعالیت های شرکت شامل\n"
+"                                تحلیل، طراحی، اجرا، نظارت و مشاوره در زمینه "
+"های دکراسیون داخلی، نما های سنتی و مدرن، باسازی\n"
+"                                و بهسازی بنا ها و بافت های فرسوده، پرژه های "
+"ساختمانی و عمرانی و ... می باش. این شرکت با بهره\n"
+"                                گیری از مجموعه ای ارزشمند از دانش فنی و "
+"نیروی انسانی متخصص در طراحی و اجرای بهترو مناسب تر\n"
+"                                عناصر موجود در فضای طرح، گامی بلند در این "
+"عرصه برداشته و با تلفیق سبک های مختلف هنری، در\n"
+"                                ارائه طرح های فنی، خلاقانه و مدرن پیشرو "
+"میباشد\n"
+"                            "
+msgstr ""
+"\n"
+"It is working with a group of thoughtful and stylish designers under the "
+"management of engineer Farhad Bayati, and the core of the company's "
+"activities include analysis, design, implementation, supervision and "
+"consulting in the fields of interior decoration, traditional and modern "
+"facades, building renovation and improvement. worn fabrics, construction "
+"projects, etc. Taking advantage of a valuable collection of technical "
+"knowledge and human resources specialized in designing and implementing "
+"better and more suitable elements in the design space, this company has "
+"taken a big step in this field and by combining different artistic styles, "
+"in providing technical and creative designs. And modern is leading"

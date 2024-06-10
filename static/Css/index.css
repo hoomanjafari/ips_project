@@ -80,7 +80,8 @@ li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2vw;
+    row-gap: 2vw;
+    column-gap: 9vw;
 }
 
 .ips-spaces-h1 {
@@ -91,22 +92,18 @@ li {
 
 .ips-spaces-h1 h1 {
     font-size: 3vw;
+    padding: 1vw 0;
     color: #363636;
 }
 
 .spaces-box {
-    width: 45vw;
+    width: 40vw;
     margin-bottom: 3vw;
 }
 
-.spaces-box:hover {
-    transition: 0.5s;
-    transform: scale(1.02);
-}
-
 .spaces-box img {
-    width: 45vw;
-    height: 35vw;
+    width: 40vw;
+    height: 30vw;
     border-radius: 1vw;
 }
 
@@ -124,11 +121,20 @@ li {
 }
 
 .find-out-more {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     font-weight: 600;
-    color: orange;
+    color: #FF7300;
+    background-color: #ffe8df;
+    border: 2px solid orange;
+    border-radius: 0.5vw;
+    padding: 0.5vw 2vw;
 }
 
+.find-out-more:hover {
+    background-color: orange;
+    color: white;
+    transition: 0.2s !important;
+}
 
 /* -------------------------------( main-content IPS Projects )------------------------------------------- */
 
@@ -142,7 +148,7 @@ li {
 
 .index-projects-h1 {
     width: 93%;
-    margin: 9vw 0 3vw;
+    margin: 1vw 0 3vw;
     padding: 1vw 0;
 }
 
@@ -252,7 +258,7 @@ li {
 }
 
 .index-contactUs-p p {
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: #363636;
     border: orange solid 6px;
     border-radius: 2vw;
