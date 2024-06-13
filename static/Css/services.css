@@ -24,15 +24,15 @@
 .go-to-previous-page button {
     font-size: 2vw;
     cursor: pointer;
-    color: crimson;
-    background-color: #ffeff2;
+    background-color: white;
+    color: #FF7300;
     padding: 1vw 2vw;
-    border: 2px solid crimson;
+    border: 3px solid #FF7300;
     border-radius: 1vw;
 }
 
 .go-to-previous-page button:hover {
-    background-color: crimson;
+    background-color: #FF7300;
     color: white;
     transition: 0.2s;
 }
@@ -62,12 +62,18 @@
 }
 
 .ips-spaces-main-container {
-    width: 70vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3vw;
     margin: 0 auto;
+}
+
+.ips-spacec-details-box {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
 }
 
 .ips-spaces-info {
@@ -76,6 +82,10 @@
     color: #5B5B5B;
     line-height: 2.5vw;
     margin-bottom: 6vw;
+}
+
+.ips-spaces-info p {
+    font-size: 1.6vw;
 }
 
 /*-----------------------------( swiper )------------------------------------*/
@@ -92,6 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /*margin-right: 3vw;*/
 }
 
 .swiper-slide img {
@@ -130,13 +141,17 @@
     }
 
     .ips-spaces-title h1 {
-        font-size: 4.4vw;
+        font-size: 4vw;
     }
 
     .ips-spaces-info {
         font-size: 1.5vw;
         line-height: 3vw;
         margin-bottom: 8vw;
+    }
+
+    .ips-spaces-info p {
+        font-size: 2vw;
     }
 }
 
@@ -155,12 +170,23 @@
         height: 26vw;
     }
 
+    .ips-spacec-details-box {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3vw;
+    }
+
+    .ips-spaces-image img {
+        width: 90vw;
+    }
+
     .go-to-previous-page button {
         font-size: 5vw;
     }
 
     .ips-spaces-title h1 {
-        font-size: 6.6vw;
+        font-size: 5.6vw;
     }
 
     .ips-spaces-info {
@@ -168,6 +194,10 @@
         line-height: 6vw;
         margin: 13vw;
         text-align: center;
+    }
+
+    .ips-spaces-info p {
+        font-size: 5vw;
     }
 
     /*---------------------( swiper )---------------------------*/

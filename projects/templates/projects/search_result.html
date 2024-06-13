@@ -6,11 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if LANGUAGE_BIDI %}
-        <title>نتیجه جستجو</title>
-    {% else %}
-        <title>Search result</title>
-    {% endif %}
+    <title>{% translate 'نتیجه جستجو' %}</title>
     <link rel="stylesheet" href="/static/Css/project.css">
 </head>
     <body>
@@ -47,12 +43,12 @@
                             <span>{{ project.project_time_city }}</span>
                             <i class="fa fa-calendar clr-orange"></i>
                         </p>
-                        <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">{% translate 'مشاهده پرژه' %}<i class="fa fa-arrow-right clr-orange"></i></a>
+                        <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">{% translate 'مشاهده پروژه ' %}<i class="fa fa-arrow-right clr-orange"></i></a>
                     </div>
                 {% empty %}
                     <div class="nothing-is-founded">
                         <i class="fa fa-ban" aria-hidden="true"></i>
-                        <p>{% translate 'پرژه ای متناسب با درخواست شما پیدا نشد' %}</p>
+                        <p>{% translate 'پروژه ای متناسب با درخواست شما پیدا نشد' %}</p>
                     </div>
                 {% endfor %}
                 <div class="pagination">

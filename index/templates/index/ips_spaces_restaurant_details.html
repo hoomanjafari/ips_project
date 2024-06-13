@@ -6,11 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if LANGUAGE_BIDI %}
-        <title>حیطه های کاری</title>
-    {% else %}
-        <title>IPS Spaces</title>
-    {% endif %}
+    <title>{% translate 'حیطه های کاری' %}</title>
     <link rel="stylesheet" href="/static/Css/services.css">
 </head>
 
@@ -22,36 +18,36 @@
 
     <div class="ips-spaces-white-spaces"></div>
     <main class="ips-spaces-main-container">
+        <secion class="ips-spacec-details-box">
+            <div class="go-to-previous-page">
+                <button type="button" onclick="window.history.go(-1); return false;">
+                    <i class="fa fa-arrow-left"></i>
+                    {% translate 'برو به صفحه قبلی' %}
+                </button>
+            </div>
 
-        <div class="go-to-previous-page">
-            <button type="button" onclick="window.history.go(-1); return false;">
-                <i class="fa fa-arrow-left"></i>
-                {% translate 'برو به صفحه قبلی' %}
-            </button>
-        </div>
+            <div class="ips-spaces-title">
+                <h1>
+                    {% translate 'رستوران و کافه' %}
+                </h1>
+            </div>
 
-        <div class="ips-spaces-title">
-            <h1>
-                {% translate 'رستوران و کافه' %}
-            </h1>
-        </div>
+            <div class="ips-spaces-image">
+                <img src="/static/images/restaraunt.jpg" alt="nema-sazi-image">
+            </div>
 
-        <div class="ips-spaces-image">
-            <img src="/static/images/restaraunt.jpg" alt="nema-sazi-image">
-        </div>
+            <div class="ips-spaces-info">
+                <p>
+                    ورود به سالنی که در نگاه اول دلپذیر و جذاب است چقدر عالی است! در طول سال ها، ما شاهد تبدیل آن از یک مکان
+                    گذری ناشناس به یک منطقه راحت برای استراحت و ملاقات بوده ایم. این محیط مرکزی و چند منظوره می تواند در
+                    صورت لزوم نقش های جدید و شکل های جدیدی به دست آورد. بنابراین سالن به فضایی پر از گزینه ها تبدیل می شود
+                    که برای آن سیستم های مبلمان را ارائه می دهیم که در آن جذابیت رسمی، راحتی و فناوری به طور هماهنگ با هم
+                    ترکیب می شوند تا تجربه کاربری کامل و رضایت بخشی را ارائه دهند. خواه سه ساعت انتظار باشد یا یک جلسه پنج
+                    دقیقه ای.
 
-        <div class="ips-spaces-info">
-            <h2>
-                ورود به سالنی که در نگاه اول دلپذیر و جذاب است چقدر عالی است! در طول سال ها، ما شاهد تبدیل آن از یک مکان
-                گذری ناشناس به یک منطقه راحت برای استراحت و ملاقات بوده ایم. این محیط مرکزی و چند منظوره می تواند در
-                صورت لزوم نقش های جدید و شکل های جدیدی به دست آورد. بنابراین سالن به فضایی پر از گزینه ها تبدیل می شود
-                که برای آن سیستم های مبلمان را ارائه می دهیم که در آن جذابیت رسمی، راحتی و فناوری به طور هماهنگ با هم
-                ترکیب می شوند تا تجربه کاربری کامل و رضایت بخشی را ارائه دهند. خواه سه ساعت انتظار باشد یا یک جلسه پنج
-                دقیقه ای.
-
-            </h2>
-        </div>
-
+                </p>
+            </div>
+        </secion>
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">

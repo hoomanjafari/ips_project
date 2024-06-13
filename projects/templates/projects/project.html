@@ -6,11 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if LANGUAGE_BIDI %}
-        <title>پرژه ها</title>
-    {% else %}
-        <title>Projects</title>
-    {% endif %}
+    <title>{% translate 'پروژه ها' %}</title>
     <link rel="stylesheet" href="/static/Css/project.css">
 </head>
 
@@ -27,11 +23,11 @@
 
     <header class="ips-projects-header">
         {% if LANGUAGE_BIDI %}
-            <h1>IPS پرژه های</h1>
+            <h1>IPS پروژه های</h1>
         {% else %}
             <h1>IPS Projects</h1>
         {% endif %}
-        <h2>{% translate ' برخی از پرژه های تکمیل شده با جزئیات  و نوع معماری ان ها' %}</h2>
+        <h2>{% translate ' برخی از پروژه های تکمیل شده با جزئیات  و نوع معماری ان ها' %}</h2>
     </header>
 
     <main class="ips-projects-main-content">
@@ -39,7 +35,7 @@
             <form>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="1">
-                    <span>{% translate 'همه پرژه ها' %}</span>
+                    <span>{% translate 'همه پروژه ها' %}</span>
                 </label>
                 <label class="project-filtering-label">
                     <input id="project-filtering" type="radio" name="project_filter" value="2">
@@ -82,7 +78,7 @@
                         <span>{{ project.project_time_city }}</span>
                         <i class="fa fa-calendar clr-orange"></i>
                     </p>
-                    <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">{% translate 'مشاهده پرژه ' %}<i class="fa fa-arrow-right clr-orange"></i></a>
+                    <a href="{% url 'ips-projects:ips-project-details' pk=project.id %}" class="ips-projects-go-details">{% translate 'مشاهده پروژه ' %}<i class="fa fa-arrow-right clr-orange"></i></a>
                 </div>
             {% endfor %}
             <div class="pagination">

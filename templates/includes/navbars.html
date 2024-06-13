@@ -5,7 +5,7 @@
             <button class="search-container-closeBtn" id="search-container-closeBtn" type="button">
                 <i class="fa fa-window-close"></i>
             </button>
-            <textarea rows="3" name="search" placeholder="{% translate 'متن مرطبت با پرژه مورد نظرتون رو بنویسید' %}"></textarea>
+            <textarea rows="3" name="search" placeholder="{% translate 'متن مرطبت با پروژه مورد نظرتون رو بنویسید' %}"></textarea>
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
@@ -25,7 +25,7 @@
                 {% endif %}
             </a></li>
             <li><a class="main-navbar-ul-a" href="{% url 'contact-us:contact-us' %}">{% translate 'ارتباط با ما' %}</a></li>
-            <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">{% translate 'پرژه ها' %}</a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">{% translate 'پروژه ها' %}</a></li>
             <li>
                 <div class="services-btn">
                     {% blocktranslate %}خدمات{% endblocktranslate %}
@@ -34,7 +34,7 @@
                         <a href="{% url 'home:ips-spaces-facade' %}">{% translate 'نما سازی و صفر تا صد ساختمان سازی' %}</a>
                         <a href="{% url 'home:ips-spaces-restaurant' %}">{% translate 'کافه و رستوران' %}</a>
                         <a href="{% url 'home:ips-spaces-home' %}">{% translate 'منزل و ویلا' %}</a>
-                        <a href="{% url 'home:ips-spaces-office' %}">{% translate 'محل کار' %}</a>
+                        <a href="{% url 'home:ips-spaces-office' %}">{% translate 'اداری' %}</a>
                     </div>
                 </div>
             </li>
@@ -112,7 +112,7 @@
                     <i class="fa fa-handshake-o"></i>
                 </li>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="{% url 'ips-projects:ips-projects' %}">{% translate 'پرژه ها' %}</a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'ips-projects:ips-projects' %}">{% translate 'پروژه ها' %}</a>
                     <i class="fa fa-building"></i>
                 </li>
                 <li>
@@ -123,7 +123,7 @@
                             <a href="{% url 'home:ips-spaces-facade' %}">{% translate 'نما سازی و صفر تا صد ساختمان سازی' %}</a>
                             <a href="{% url 'home:ips-spaces-restaurant' %}">{% translate 'کافه و رستوران' %}</a>
                             <a href="{% url 'home:ips-spaces-home' %}">{% translate 'منزل و ویلا' %}</a>
-                            <a href="{% url 'home:ips-spaces-office' %}">{% translate 'محل کار' %}</a>
+                            <a href="{% url 'home:ips-spaces-office' %}">{% translate 'اداری' %}</a>
                         </div>
                     </div>
                     <i class="fa fa-paperclip" id="fa-paperclip"></i>

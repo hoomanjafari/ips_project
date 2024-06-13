@@ -18,14 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "صفحه نخست"
+msgstr "Home Page"
+
 #: .\templates\index\index.html:26
 msgid "شرکت مهندسی"
 msgstr "Engineering Company"
 
 #: .\templates\index\index.html:27
 msgid ""
-"در زمینه طراحی و مجری پرژه های لوکس ساختمانی با پیش از بیست و پنج سال سابقه "
-"درخشان در خدمات شما باشد"
+"در زمینه طراحی و مجری پروژه های لوکس ساختمانی با پیش از بیست و پنج سال سابقه "
+"درخشان در خدمت شما می باشد"
 msgstr ""
 "is at your service in the field of designing and implementing luxury "
 "construction projects with twenty-five years of brilliant experience"
@@ -52,16 +55,16 @@ msgid "منزل و ویلا"
 msgstr "Home"
 
 #: .\templates\index\index.html:97
-msgid "محل کار"
+msgid "اداری"
 msgstr "Office"
 
 #: .\templates\index\index.html:115
-msgid "پرژه های"
+msgid "پروژه های"
 msgstr "Projects"
 
 #: .\templates\index\index.html:125 .\templates\index\index.html:137
 #: .\templates\index\index.html:149
-msgid "مشاهده پرژه ها"
+msgid "مشاهده پروژه ها"
 msgstr "See the Projects"
 
 #: .\templates\index\index.html:128
@@ -101,13 +104,13 @@ msgstr "About"
 msgid "ارتباط با ما"
 msgstr "Contact Us"
 
-msgid "پرژه ها"
+msgid "پروژه ها"
 msgstr "Projects"
 
 msgid "خدمات"
 msgstr "Services"
 
-msgid "متن مرطبت با پرژه مورد نظرتون رو بنویسید"
+msgid "متن مرطبت با پروژه مورد نظرتون رو بنویسید"
 msgstr "Search what ever about projects in here"
 
 #: .\includes\footer.html:6
@@ -123,7 +126,7 @@ msgid " زمینه های فعالیت"
 msgstr "Fields of activity "
 
 #: .\includes\footer.html:34
-msgid "تمامی حقوق مادی و معنوی این وبسایت برای شرکت مهندس ای پی اس می باشد"
+msgid "تمامی حقوق این وبسایت برای شرکت مهندسی ایستا پی شهباز می باشد"
 msgstr "All rights reserved"
 
 
@@ -131,5 +134,5 @@ msgstr "All rights reserved"
 msgid "بازسازی و دکراسیون داخلی"
 msgstr "Reconstruction and interior decoration"
 
-msgid " پرژه های"
+msgid " پروژه های"
 msgstr "Projects "

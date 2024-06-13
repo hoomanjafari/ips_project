@@ -19,11 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\apps.py:8 .\models.py:27
-msgid "پرژه ها"
-msgstr "projects"
+msgid "پروژه ها"
+msgstr "Projects"
+
+msgid "جزئیات پروژه"
+msgstr "Project Details"
+
 
 #: .\models.py:6
-msgid "عنوان پرژه"
+msgid "عنوان پروژه"
 msgstr "project title"
 
 #: .\models.py:7
@@ -31,15 +35,15 @@ msgid "سال و شهر"
 msgstr "city / year"
 
 #: .\models.py:8
-msgid "ادرس پرژه"
+msgid "ادرس پروژه"
 msgstr "project full-address"
 
 #: .\models.py:9
-msgid "عکس اصلی پرژه"
+msgid "عکس اصلی پروژه"
 msgstr "project main-image"
 
 #: .\models.py:10
-msgid "توضیحات پرژه"
+msgid "توضیحات پروژه"
 msgstr "project details"
 
 #: .\models.py:13
@@ -87,15 +91,15 @@ msgid "عکس 6"
 msgstr "image-6"
 
 #: .\models.py:28
-msgid "پرژه"
+msgid "پروژه"
 msgstr "project"
 
 #: .\templates\projects\project.html:26
-msgid " برخی از پرژه های تکمیل شده با جزئیات  و نوع معماری ان ها"
+msgid " برخی از پروژه های تکمیل شده با جزئیات  و نوع معماری ان ها"
 msgstr "Some completed projects with their details and architecture"
 
 #: .\templates\projects\project.html:34
-msgid "همه پرژه ها"
+msgid "همه پروژه ها"
 msgstr "All projects"
 
 #: .\templates\projects\project.html:38
@@ -120,7 +124,7 @@ msgstr "Zero to one hundred construction"
 #: .\templates\projects\projects_filtering.html:21
 #: .\templates\projects\search_result.html:46
 
-msgid "مشاهده پرژه "
+msgid "مشاهده پروژه "
 msgstr "See The Project "
 
 #: .\templates\projects\projects_details.html:9
@@ -150,5 +154,5 @@ msgid "متن وارد شده برای جستجو"
 msgstr "Entered Text To Search"
 
 #: .\templates\projects\search_result.html:51
-msgid "پرژه ای متناسب با درخواست شما پیدا نشد"
+msgid "پروژه ای متناسب با درخواست شما پیدا نشد"
 msgstr "There is no such a project"

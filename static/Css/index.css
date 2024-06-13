@@ -114,9 +114,10 @@ li {
 }
 
 .spaces-box-information {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
+    font-weight: 600;
     line-height: 2vw;
-    margin: 2vw 0;
+    margin: 2vw auto;
     color: #777777;
 }
 
@@ -257,12 +258,12 @@ li {
     position: relative;
 }
 
-.index-contactUs-p p {
+.index-contactUs-p h2 {
     font-size: 1.8vw;
     color: #363636;
     border: orange solid 6px;
     border-radius: 2vw;
-    padding: 2vw;
+    padding: 2vw 1vw;
 }
 
 .index-contactUs-p img {
@@ -371,22 +372,23 @@ li {
     }
 
     .spaces-box-title {
-        font-size: 3vw;
+        font-size: 2vw;
         width: 100%;
+        text-align: center;
     }
 
     .spaces-box-information {
-        font-size: 1.7vw;
+        font-size: 1.5vw;
         font-weight: 600;
         line-height: 3vw;
         width: 80%;
         margin-right: auto;
+        text-align: center;
     }
 
     .find-out-more {
         font-size: 1.9vw;
         font-weight: 600;
-        width: 100%;
     }
 
     /* -------------------------------( main-content IPS Projects )------------------------------------------- */
@@ -422,15 +424,16 @@ li {
 
     /* -------------------------------( main-content Contact Us )------------------------------------------- */
 
-    .index-contactUs-p p {
-        font-size: 2.5vw;
-        color: #363636;
-        padding: 2.5vw;
+
+    .index-contactUs-p h2 {
+        font-size: 2.3vw;
+        padding: 2.5vw 1vw;
+        text-align: center;
     }
 
     .index-contactUs-form input {
         padding: 1vw 1.5vw;
-        font-size: 2.1vw;
+        font-size: 1.9vw;
         width: 33vw;
         margin-bottom: 1.5vw;
     }
@@ -519,7 +522,6 @@ li {
     .find-out-more {
         font-size: 3.6vw;
         font-weight: 600;
-        width: 90%;
     }
 
     /* -------------------------------( main-content IPS Projects )------------------------------------------- */
@@ -571,14 +573,15 @@ li {
 
     .index-contactUs-p {
         position: relative;
-        width: 80%;
+        width: 90%;
     }
 
-    .index-contactUs-p p {
-        font-size: 4vw;
+    .index-contactUs-p h2 {
+        font-size: 3.3vw;
         border: orange solid 3px;
         border-radius: 3vw;
-        padding: 3vw;
+        padding: 3vw 0;
+        text-align: center;
     }
 
     .index-contactUs-p img {
@@ -607,8 +610,8 @@ li {
     }
 
     .index-contactUs-form button {
-        font-size: 6vw;
-        padding: 0 6vw;
+        font-size: 4vw;
+        padding: 1vw 6vw;
         border-radius: 1.5vw;
     }
 }

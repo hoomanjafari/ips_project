@@ -20,7 +20,7 @@ msgstr ""
 
 #: .\apps.py:8
 msgid "ارتباط با ما"
-msgstr "contact us"
+msgstr "Contact us"
 
 #: .\models.py:6 .\templates\contact_us\contact-us.html:34
 msgid "نام و نام خانوادگی"

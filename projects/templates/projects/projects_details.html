@@ -6,11 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if LANGUAGE_BIDI %}
-        <title>جزئیات پرژه</title>
-    {% else %}
-        <title>Project Details</title>
-    {% endif %}
+    <title>{% translate 'جزئیات پروژه' %}</title>
     <link rel="stylesheet" href="/static/Css/services.css">
 </head>
 
@@ -23,30 +19,30 @@
 
     <div class="ips-spaces-white-spaces"></div>
     <main class="ips-spaces-main-container">
+        <secion class="ips-spacec-details-box">
+            <div class="go-to-previous-page">
+                <button type="button" onclick="window.history.go(-1); return false;">
+                    <i class="fa fa-arrow-left"></i>
+                    {% translate 'برو به صفحه قبلی' %}
+                </button>
+            </div>
 
-        <div class="go-to-previous-page">
-            <button type="button" onclick="window.history.go(-1); return false;">
-                <i class="fa fa-arrow-left"></i>
-                {% translate 'برو به صفحه قبلی' %}
-            </button>
-        </div>
+            <div class="ips-spaces-title">
+                <h1>
+                    {{ project.project_title }}
+                </h1>
+            </div>
 
-        <div class="ips-spaces-title">
-            <h1>
-                {{ project.project_title }}
-            </h1>
-        </div>
+            <div class="ips-spaces-image">
+                <img src="{{ project.project_main_image.url }}" alt="nema-sazi-image">
+            </div>
 
-        <div class="ips-spaces-image">
-            <img src="{{ project.project_main_image.url }}" alt="nema-sazi-image">
-        </div>
-
-        <div class="ips-spaces-info">
-            <h2>
-                {{ project.project_details }}
-            </h2>
-        </div>
-
+            <div class="ips-spaces-info">
+                <p>
+                    {{ project.project_details }}
+                </p>
+            </div>
+        </secion>
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">

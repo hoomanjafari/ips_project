@@ -134,12 +134,15 @@
     padding: 0.5vw 2vw;
     background-color: white;
     border-radius: 1vw;
+    border: 2px solid #FF7300;
 }
 
 .ips-projects-go-details:hover,
 .ips-projects-go-details:active {
     transition: 0.3s;
     transform: translate(0.5vw);
+    background-color: #FF7300;
+    color: white;
 }
 
 .pagination {

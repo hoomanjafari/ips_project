@@ -6,11 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if LANGUAGE_BIDI %}
-        <title>صفحه نخست</title>
-    {% else %}
-        <title>Home Page</title>
-    {% endif %}
+    <title>{% translate 'صفحه نخست' %}</title>
     <link rel="stylesheet" href="/static/Css/index.css">
 </head>
 
@@ -29,7 +25,7 @@
     <header class="index-header" id="index-header">
         <section class="index-header-content">
             <h1 class="index-header-title"><span class="clr-orange">IPS</span> {% translate 'شرکت مهندسی' %} </h1>
-            <h1 class="index-header-info">{% blocktranslate %}در زمینه طراحی و مجری پرژه های لوکس ساختمانی با پیش از بیست و پنج سال سابقه درخشان در خدمات شما باشد{% endblocktranslate %}</h1>
+            <h1 class="index-header-info">{% blocktranslate %}در زمینه طراحی و مجری پروژه های لوکس ساختمانی با پیش از بیست و پنج سال سابقه درخشان در خدمت شما می باشد{% endblocktranslate %}</h1>
         </section>
     </header>
 
@@ -49,9 +45,9 @@
                     <h1 class="spaces-box-title">
                         {% translate 'نما سازی و صفر تا صد ساختمان سازی' %}
                     </h1>
-                    <h4 class="spaces-box-information">
+                    <p class="spaces-box-information">
                         خطی بودن و سبکی برای آرامش، رفاه و جلسات محاصره شده توسط طبیعت و نزدیک به آب.
-                    </h4>
+                    </p>
 
                     <a href="{% url 'home:ips-spaces-facade' %}" class="find-out-more">
                         {% translate 'توضیحات بیشتر' %}
@@ -66,11 +62,11 @@
                     <h1 class="spaces-box-title">
                         {% translate 'کافه و رستوران' %}
                     </h1>
-                    <h4 class="spaces-box-information">
+                    <p class="spaces-box-information">
                         منوی هر چه باشد، کلاسیک یا نوآورانه، یا حتی فقط برای یک قهوه، مجموعه ای از محصولات ماژولار
                         که به
                         راحتی فضاها را به اشتراک می گذارند.
-                    </h4>
+                    </p>
 
                     <a href="{% url 'home:ips-spaces-restaurant' %}" class="find-out-more">
                         {% translate 'توضیحات بیشتر' %}
@@ -83,10 +79,10 @@
                     <h1 class="spaces-box-title">
                         {% translate 'منزل و ویلا' %}
                     </h1>
-                    <h4 class="spaces-box-information">
+                    <p class="spaces-box-information">
                         در راحتی و زیبایی خانه خود، محصولاتی که لذت با هم بودن و آرامش را در عنصر ما منتقل می کنند.
 
-                    </h4>
+                    </p>
 
                     <a href="{% url 'home:ips-spaces-home' %}" class="find-out-more">
                         {% translate 'توضیحات بیشتر' %}
@@ -99,11 +95,11 @@
                 <div class="spaces-box" id="opacity100-onload">
                     <img src="/static/images/offic.jpg  " alt="ips-spaces-image">
                     <h1 class="spaces-box-title">
-                        {% translate 'محل کار' %}
+                        {% translate 'اداری' %}
                     </h1>
-                    <h4 class="spaces-box-information">
+                    <p class="spaces-box-information">
                         ما انعطاف پذیری کار معاصر را به پروژه ای قابل تشخیص، قدرتمند و سبک تبدیل کرده ایم.
-                    </h4>
+                    </p>
 
                     <a href="{% url 'home:ips-spaces-office' %}" class="find-out-more">
                         {% translate 'توضیحات بیشتر' %}
@@ -117,7 +113,7 @@
 
         <section class="index-projects-container">
             <div class="index-projects-h1" id="index-projects-h1">
-                <h1>IPS {% translate 'پرژه های' %}</h1>
+                <h1>IPS {% translate 'پروژه های' %}</h1>
                 <div class="title-border" id="project-title-border"></div>
                 <div class="title-mini-border" id="project-title-mini-border"></div>
             </div>
@@ -127,7 +123,7 @@
                 <div class="index-project-box this-mg-right" id="opacity100-onload">
                     <img src="/static/images/watting-room.jpg" alt="project-image">
                     <a href="{% url 'ips-projects:ips-projects' %}" class="index-project-details">
-                        {% translate 'مشاهده پرژه ها' %}
+                        {% translate 'مشاهده پروژه ها' %}
                     </a>
                     <h1 class="index-project-title">
                         {% translate 'باسازی و دکراسیون داخلی' %}
@@ -139,7 +135,7 @@
                 <div class="index-project-box" id="opacity100-onload">
                     <img src="/static/images/zero-to-100.jpg" alt="project-image">
                     <a href="{% url 'ips-projects:ips-projects' %}" class="index-project-details">
-                        {% translate 'مشاهده پرژه ها' %}
+                        {% translate 'مشاهده پروژه ها' %}
                     </a>
                     <h1 class="index-project-title">
                         {% translate 'صفر تا صد ساختمان سازی' %}
@@ -151,7 +147,7 @@
                 <div class="index-project-box" id="opacity100-onload">
                     <img src="/static/images/villa.jpg" alt="project-image">
                     <a href="{% url 'ips-projects:ips-projects' %}" class="index-project-details">
-                        {% translate 'مشاهده پرژه ها' %}
+                        {% translate 'مشاهده پروژه ها' %}
                     </a>
                     <h1 class="index-project-title">
                         {% translate 'نما سازی' %}
@@ -167,7 +163,7 @@
             <div class="index-contactUs-Box">
                 <div class="index-contactUs-p">
                     <img src="/static/images/orange-arrow.png" alt="orange-arrow">
-                    <p>{% blocktranslate %}برای مشاوره و بازدید رایگان شماره تماس و نام خودتون رو وارد کنید{% endblocktranslate%}</p>
+                    <h2>{% blocktranslate %}برای مشاوره و بازدید رایگان شماره تماس و نام خودتون رو وارد کنید{% endblocktranslate%}</h2>
                 </div>
                 <div class="index-contactUs-form">
                     <label>{% translate 'نام و نام خانوادگی' %}</label><br>
