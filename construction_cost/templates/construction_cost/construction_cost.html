@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load i18n %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هزینه ساخت</title>
+    <link rel="stylesheet" href="/static/Css/construction_cost.css">
+</head>
+
+<body>
+    {% include 'includes/navbars.html' %}
+    {% include 'includes/on_loading.html' %}
+
+    <!-- <div class="construction-const-white-space"></div> -->
+    <main class="construction-cost-main-container">
+        
+        <div class="construction-cost-title">
+            <h1>
+                {% translate 'هزینه ساخت هر متر مربع ساختمان سازی' %}
+            </h1>
+
+            <h2>
+                {% translate 'اخرین بروز رسانی' %} <span class="clr-orange">( {{ construction.last_prices_update }} )</span>
+            </h2>
+        </div>
+
+        <section class="construction-cost-all-boxes">
+            <div class="construction-cost-box">
+                <div class="title-border"></div>
+                <h1>{% translate 'هزینه ساخت هر متر مربع سقف و ستون بتنی' %}</h1>
+
+                <p>
+                    {% translate 'هزینه ساخت هر متر مربع زیربنا فونداسیون و سقف بتنی به طور میانگین از' %}
+                    <span class="clr-orange"> {{ construction.concrete_roof_column_begin }}</span>
+                    {% translate 'تا' %}
+                    <span class="clr-orange"> {{ construction.concrete_roof_column_end }}</span>
+                    {% translate 'می باشد' %}
+                </p>
+
+                <p>
+                    {% blocktranslate %}
+                        اجرای فونداسیون برای هر سازه‌ای بعنوان یک سقف حساب می‌شود بنابراین هزینه هر متر مربع فونداسیون
+                        تقریباً
+                        با هر یک متر مربع سقف تقریبا برابر است .
+
+                        به طور مثال اگر قرار است شما یک ساختمان 100 متریِ دوطبقه اسکلت بتنی را بسازید موقع حساب هزینه باید
+                        300
+                        متر را لحاظ کنید( هر طبقه 100 متر، دوطبقه رویِ هم می‌شود 200 متر همانطور که گفتیم فونداسیون نیز یک
+                        طبقه
+                        است یعنی در کُل 300 متر می‌شود)
+                    {% endblocktranslate %}
+                </p>
+            </div>
+
+
+            <div class="construction-cost-box">
+                <div class="title-border"></div>
+                <h1>{% translate 'هزینه ساخت هر متر مربع سقف وستون فلزی' %}</h1>
+
+                <p>
+                    {% translate 'هزینه هر متر مربع سقف و ستون فلزی به طور میانگین از' %}
+                    <span class="clr-orange"> {{ construction.metal_roof_column_begin }}</span>
+                    {% translate 'تا' %}
+                    <span class="clr-orange"> {{ construction.metal_roof_column_end }}</span>
+                    {% translate 'می باشد' %}
+                </p>
+            </div>
+
+            <div class="construction-cost-box">
+                <div class="title-border"></div>
+                <h1>{% translate 'هزینه هر متر مربع سفت کاری (فونداسیون ، اسکلت ، دیوارکشی ، گچ خاک )' %}</h1>
+
+                <p>
+                    {% translate 'هزینه هر متر مربع سفت کاری به طور میانگین از' %}
+                    <span class="clr-orange"> {{ construction.hardening_begin }}</span>
+                    {% translate 'تا' %}
+                    <span class="clr-orange"> {{ construction.hardening_end }}</span>
+                    {% translate 'می باشد' %}
+                </p>
+            </div>
+
+            <div class="construction-cost-box">
+                <div class="title-border"></div>
+                <h1>{% translate 'هزینه نازک کاری ساختمان' %}</h1>
+                <p>
+                    {% blocktranslate %}
+                        نازک کاری شامل مواردی همچون ایزوگام، کاشی و سرامیک، گچ رویه، نقاشی، نما، کاغذ دیواری، پارکت و چندین
+                        موردِ مشابه دیگر می‌شود
+                    {% endblocktranslate %}
+                </p>
+                <p>
+                    {% blocktranslate %}
+                    نکته مهمی که نقشِ پر رنگی در تعیین نرخ و هزینه اجرای نازک کاری دارد نوع مصالح بِکار رفته و کیفیتِ
+                    کارِ
+                    اجرا شده دارد
+                    {% endblocktranslate %}
+                </p>
+
+                <p>
+                    {% translate 'هزینه تمام مراحل نازک کاری به طور میانگین از' %}
+                    <span class="clr-orange"> {{ construction.joinery_begin }}</span>
+                    {% translate 'به بالا می باشد' %}
+                </p>
+            </div>
+
+            <div class="construction-cost-box">
+                <div class="title-border"></div>
+                <h1>{% translate 'هزینه ساخت هر متر مربع ساختمان ( با مصالح )' %}</h1>
+
+                <p>
+                    {% blocktranslate %}
+                        تعیین نرخ و هزینه هر متر مربع ساختمان با مصالح به مواردی همچون نوع، کیفیت و کمیت مصالح بکار رفته بستگی دارد
+                        اما اگر بخواهیم قیمتِ میانگین را با توجه به توضیحات ارائه شده درج کنیم به طور میانگین از
+                    {% endblocktranslate %}
+                    <span class="clr-orange"> {{ construction.construction_with_materials_begin }}</span>
+                    {% translate 'تا' %}
+                    <span class="clr-orange"> {{ construction.construction_with_materials_end }}</span>
+                    {% translate 'می باشد' %}
+                </p>
+            </div>
+
+            <div class="construction-cost-box">
+                <div class="title-border"></div>
+                <h1>{% translate 'هزینه هر متر مربع ساختمان ( فقط دستمزد / بدون مصالح )' %}</h1>
+                <p>
+                    {% translate 'هزینه اجرای ساخت از پی تا کلید (بدون مصالح ) هر متر مربع مفید و غیر مفید از ' %}
+                    <span class="clr-orange"> {{ construction.construction_without_materials_begin }}</span>
+                    {% translate 'به بالا می باشد' %}
+                </p>
+                <p>
+                    {% translate 'مثلا دستمزد نمای دیوار راه پله (نمای گچ) از ' %}
+                    <span class="clr-orange"> {{ construction.construction_without_materials_example_begin }}</span>
+                    {% translate 'با (نمای سنگ تراورتن) از' %}
+                    <span class="clr-orange"> {{ construction.construction_without_materials_example_end }}</span>
+                    {% translate 'متفاوت است' %}
+                </p>
+            </div>
+
+            <div class="construction-cost-box">
+                <div class="title-border"></div>
+                <h1>{% translate 'تفاوت قیمت ساخت ساختمان مسکونی با تجاری' %}</h1>
+                <p>
+                    {% blocktranslate %}
+                    هزینه ساخت هر متر مربع ساختمان تجاری در حالت کلی نسبت به هزینه ساخت هر مترمربع ساختمان مسکونی پایین تر است
+                    دلیل آن سادگی و مصرف مصالح کمتر می باشد
+                    گران بودن خرید واحد یا مغازه تجاری به دلیل بالا بودن قیمت مجوز و موقعیت و کاربری تجاری آن است و مصالح و قیمت ساخت آن تعیین کننده قیمت نهایی هرمترمربع ساختمان تجاری نخواهد بود
+                    قیمت تمام شده سنگ کاری، سیستم روشنایی، لوله کشی، کچ کاری، نقاشی و … یک واحد تجاری از یک واحد مسکونی پایین تر خواهد بود
+                    {% endblocktranslate %}
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        .construction-cost-box {
+            direction: ltr;
+            {% if LANGUAGE_BIDI %}
+                direction: rtl;
+            {% endif %}
+        }
+    </style>
+
+
+
+
+
+    <script src="/static/Js/navbars.js"></script>
+</body>
+
+</html>

@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'projects.apps.ProjectsConfig',
     'about_us.apps.AboutUsConfig',
     'contact_us.apps.ContactUsConfig',
+    'construction_cost.apps.ConstructionCostConfig',
 ]
 
 MIDDLEWARE = [

@@ -98,7 +98,10 @@ msgstr "Send"
 msgid "برو به صفحه قبلی"
 msgstr "Go Previous Page"
 
-msgid "درباره"
+msgid "هزینه ساخت "
+msgstr "Construction Cost"
+
+msgid "درباره "
 msgstr "About"
 
 msgid "ارتباط با ما"

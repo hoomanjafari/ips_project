@@ -26,6 +26,7 @@
             </a></li>
             <li><a class="main-navbar-ul-a" href="{% url 'contact-us:contact-us' %}">{% translate 'ارتباط با ما' %}</a></li>
             <li><a class="main-navbar-ul-a" href="{% url 'ips-projects:ips-projects' %}">{% translate 'پروژه ها' %}</a></li>
+            <li><a class="main-navbar-ul-a" href="{% url 'construction-cost:construction-cost' %}">{% translate 'هزینه ساخت ' %}</a></li>
             <li>
                 <div class="services-btn">
                     {% blocktranslate %}خدمات{% endblocktranslate %}
@@ -104,7 +105,11 @@
                     </a>
                 </div>
                 <li>
-                    <a class="tablet-mobile-menubar-a" href="{% url 'about-us:about-us' %}"> {% translate 'درباره' %}<span class="clr-orange">IPS</span></a>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'construction-cost:construction-cost' %}"> {% translate 'هزینه ساخت ' %}</a>
+                    <i class="fa fa-usd"></i>
+                </li>
+                <li>
+                    <a class="tablet-mobile-menubar-a" href="{% url 'about-us:about-us' %}"> {% translate 'درباره ' %}<span class="clr-orange">IPS</span></a>
                     <i class="fa fa-info"></i>
                 </li>
                 <li>

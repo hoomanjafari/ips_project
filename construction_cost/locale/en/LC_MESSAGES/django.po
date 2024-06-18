@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-17 17:12+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\apps.py:8 .\models.py:56
+msgid "قیمت ساختمان سازی"
+msgstr "Construction cost"
+
+#: .\models.py:7 .\templates\construction_cost\construction_cost.html:26
+msgid "اخرین بروز رسانی"
+msgstr "Last update"
+
+#: .\models.py:11
+msgid "شروع سقف و ستون بتنی"
+msgstr "The construction cost of concrete roof and column begins"
+
+#: .\models.py:14
+msgid "پایان سقف و ستون بتنی"
+msgstr "The construction cost of concrete roof and column ends"
+
+#: .\models.py:18
+msgid "َشروع سقف و ستون فلزی"
+msgstr "The cost of Weston metal roof begins"
+
+#: .\models.py:21
+msgid "پایان سقف و ستون فلزی"
+msgstr "The cost of Weston metal roof ends"
+
+#: .\models.py:25
+msgid "شروع سفت کاری"
+msgstr "hardening begins"
+
+#: .\models.py:28
+msgid "پایان سفت کاری"
+msgstr "hardening ends"
+
+#: .\models.py:32
+msgid "شروع نازک کاری"
+msgstr "joinery begins"
+
+#: .\models.py:36
+msgid "شروع ساختمان سازی با مصالح"
+msgstr "Construction cost of building (with materials) begins"
+
+#: .\models.py:39
+msgid "پایان ساختمان سازی با مصالح"
+msgstr "Construction cost of building (with materials) ends"
+
+#: .\models.py:43
+msgid "شروع ساختمان سازی بدون مصالح"
+msgstr "The cost of building (without materials) begins"
+
+#: .\models.py:46
+msgid "مثال شروع ساختمان سازی بدون مصالح"
+msgstr "The example of cost of a building (without materials) begins"
+
+#: .\models.py:49
+msgid "مثال پایان ساختمان سازی بدون مصالح"
+msgstr "The example of cost of a building (without materials) ends"
+
+#: .\models.py:55
+msgid "قیمت های ساختمان سازی"
+msgstr "Construction cost for buildings"
+
+#: .\templates\construction_cost\construction_cost.html:22
+msgid "هزینه ساخت هر متر مربع ساختمان سازی"
+msgstr "Construction cost per square meter of construction"
+
+#: .\templates\construction_cost\construction_cost.html:33
+msgid "هزینه ساخت هر متر مربع سقف و ستون بتنی"
+msgstr "The construction cost of each square meter of concrete roof and column"
+
+#: .\templates\construction_cost\construction_cost.html:36
+msgid "هزینه ساخت هر متر مربع زیربنا فونداسیون و سقف بتنی به طور میانگین از"
+msgstr ""
+"The construction cost of each square meter of foundation and concrete roof "
+"is on average from"
+
+#: .\templates\construction_cost\construction_cost.html:38
+#: .\templates\construction_cost\construction_cost.html:66
+#: .\templates\construction_cost\construction_cost.html:79
+#: .\templates\construction_cost\construction_cost.html:119
+msgid "تا"
+msgstr "to"
+
+#: .\templates\construction_cost\construction_cost.html:40
+#: .\templates\construction_cost\construction_cost.html:68
+#: .\templates\construction_cost\construction_cost.html:81
+#: .\templates\construction_cost\construction_cost.html:121
+msgid "می باشد"
+msgstr "."
+
+#: .\templates\construction_cost\construction_cost.html:44
+msgid ""
+"\n"
+"                        اجرای فونداسیون برای هر سازه‌ای بعنوان یک سقف حساب "
+"می‌شود بنابراین هزینه هر متر مربع فونداسیون\n"
+"                        تقریباً\n"
+"                        با هر یک متر مربع سقف تقریبا برابر است .\n"
+"\n"
+"                        به طور مثال اگر قرار است شما یک ساختمان 100 متریِ "
+"دوطبقه اسکلت بتنی را بسازید موقع حساب هزینه باید\n"
+"                        300\n"
+"                        متر را لحاظ کنید( هر طبقه 100 متر، دوطبقه رویِ هم "
+"می‌شود 200 متر همانطور که گفتیم فونداسیون نیز یک\n"
+"                        طبقه\n"
+"                        است یعنی در کُل 300 متر می‌شود)\n"
+"                    "
+msgstr ""
+"\n"
+"The implementation of the foundation for any structure is considered as a "
+"roof, so the cost of each square meter of the foundation is almost equal to "
+"each square meter of the roof. For example, if you are going to build a 100-"
+"meter two-story building with a concrete frame, you must include 300 meters "
+"when calculating the cost (each floor is 100 meters, the two floors will be "
+"200 meters, as we said, the foundation is also one floor, which means a "
+"total of 300 meters. will be)"
+
+#: .\templates\construction_cost\construction_cost.html:61
+msgid "هزینه ساخت هر متر مربع سقف وستون فلزی"
+msgstr "The cost of making a Weston metal roof per square meter"
+
+#: .\templates\construction_cost\construction_cost.html:64
+msgid "هزینه هر متر مربع سقف و ستون فلزی به طور میانگین از"
+msgstr "The cost of making a Weston metal roof per square meter"
+
+#: .\templates\construction_cost\construction_cost.html:74
+msgid "هزینه هر متر مربع سفت کاری (فونداسیون ، اسکلت ، دیوارکشی ، گچ خاک )"
+msgstr ""
+"The cost of each square meter of stiffening (foundation, skeleton, wall "
+"covering, soil plaster)"
+
+#: .\templates\construction_cost\construction_cost.html:77
+msgid "هزینه هر متر مربع سفت کاری به طور میانگین از"
+msgstr "The cost of each square meter of rigid work is on average from"
+
+#: .\templates\construction_cost\construction_cost.html:87
+msgid "هزینه نازک کاری ساختمان"
+msgstr "The cost of building joinery"
+
+#: .\templates\construction_cost\construction_cost.html:89
+msgid ""
+"\n"
+"                        نازک کاری شامل مواردی همچون ایزوگام، کاشی و سرامیک، "
+"گچ رویه، نقاشی، نما، کاغذ دیواری، پارکت و چندین\n"
+"                        موردِ مشابه دیگر می‌شود\n"
+"                    "
+msgstr ""
+"\n"
+"Joinery includes items such as Izogam, ceramic tiles, top plaster, painting, "
+"façade, wall paper, parquet and many other similar items"
+
+#: .\templates\construction_cost\construction_cost.html:95
+msgid ""
+"\n"
+"                    نکته مهمی که نقشِ پر رنگی در تعیین نرخ و هزینه اجرای نازک "
+"کاری دارد نوع مصالح بِکار رفته و کیفیتِ\n"
+"                    کارِ\n"
+"                    اجرا شده دارد\n"
+"                    "
+msgstr ""
+"\n"
+"An important point that plays a significant role in determining the rate and "
+"cost of carpentry is the type of materials used and the quality of the work "
+"performed"
+
+#: .\templates\construction_cost\construction_cost.html:103
+msgid "هزینه تمام مراحل نازک کاری به طور میانگین از"
+msgstr "The cost of all stages of carpentry on average from"
+
+#: .\templates\construction_cost\construction_cost.html:105
+#: .\templates\construction_cost\construction_cost.html:131
+msgid "به بالا می باشد"
+msgstr "up to more"
+
+#: .\templates\construction_cost\construction_cost.html:111
+msgid "هزینه ساخت هر متر مربع ساختمان ( با مصالح )"
+msgstr "Construction cost per square meter of building (with materials)"
+
+#: .\templates\construction_cost\construction_cost.html:114
+msgid ""
+"\n"
+"                        تعیین نرخ و هزینه هر متر مربع ساختمان با مصالح به "
+"مواردی همچون نوع، کیفیت و کمیت مصالح بکار رفته بستگی دارد\n"
+"                        اما اگر بخواهیم قیمتِ میانگین را با توجه به توضیحات "
+"ارائه شده درج کنیم به طور میانگین از\n"
+"                    "
+msgstr ""
+"\n"
+"Determining the rate and cost of each square meter of building with "
+"materials depends on things such as the type, quality and quantity of "
+"materials used, but if we want to include the average price according to the "
+"explanations provided, on average from"
+
+#: .\templates\construction_cost\construction_cost.html:127
+msgid "هزینه هر متر مربع ساختمان ( فقط دستمزد / بدون مصالح )"
+msgstr ""
+"The cost of each square meter of the building (only wages / without "
+"materials)"
+
+#: .\templates\construction_cost\construction_cost.html:129
+msgid ""
+"هزینه اجرای ساخت از پی تا کلید (بدون مصالح ) هر متر مربع مفید و غیر مفید از "
+msgstr ""
+"The cost of construction from foundation to key (without materials) for each "
+"useful and non-useful square meter is from"
+
+#: .\templates\construction_cost\construction_cost.html:134
+msgid "مثلا دستمزد نمای دیوار راه پله (نمای گچ) از "
+msgstr "For example, staircase wall (plaster facade) is different"
+
+#: .\templates\construction_cost\construction_cost.html:136
+msgid "با (نمای سنگ تراورتن) از"
+msgstr "from staircase wall (travertine facade) "
+
+#: .\templates\construction_cost\construction_cost.html:138
+msgid "متفاوت است"
+msgstr "."
+
+#: .\templates\construction_cost\construction_cost.html:144
+
+msgid "تفاوت قیمت ساخت ساختمان مسکونی با تجاری"
+msgstr "The difference in the price of building residential and commercial buildings"
+
+#: .\templates\construction_cost\construction_cost.html:146
+msgid ""
+"\n"
+"                    هزینه ساخت هر متر مربع ساختمان تجاری در حالت کلی نسبت به "
+"هزینه ساخت هر مترمربع ساختمان مسکونی پایین تر است\n"
+"                    دلیل آن سادگی و مصرف مصالح کمتر می باشد\n"
+"                    گران بودن خرید واحد یا مغازه تجاری به دلیل بالا بودن "
+"قیمت مجوز و موقعیت و کاربری تجاری آن است و مصالح و قیمت ساخت آن تعیین کننده "
+"قیمت نهایی هرمترمربع ساختمان تجاری نخواهد بود\n"
+"                    قیمت تمام شده سنگ کاری، سیستم روشنایی، لوله کشی، کچ "
+"کاری، نقاشی و … یک واحد تجاری از یک واحد مسکونی پایین تر خواهد بود\n"
+"                    "
+msgstr ""
+"\n"
+"The cost of building each square meter of a commercial building is generally lower than the cost of building each square meter of a residential building."
+"The reason is simplicity and less material consumption."
+"The expensiveness of buying a commercial unit or shop is due to the high price of the license and its location and commercial use, and the materials and construction price will not determine the final price per square meter of the commercial building."
+"The cost of stone work, lighting system, plumbing, ketchup, painting, etc. will be lower for a commercial unit than for a residential unit."

@@ -42,6 +42,32 @@ body {
     opacity: 70%;
 }
 
+.contact-us-social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2vw 0;
+}
+
+.contact-us-social-media a {
+    font-size: 2vw;
+    color: #FF7300;
+}
+
+.contact-us-social-media a:hover {
+    color: #ffda9b;
+    transition: 0.3s;
+}
+
+.contact-us-whatsapp {
+    font-size: 2vw;
+    color: white;
+}
+
+.contact-us-whatsapp i {
+    color: #FF7300;
+}
+
 .ips-contact-us-p {
     font-size: 1.6vw;
     color: #FF7300;
@@ -145,6 +171,20 @@ body {
 
     .ips-contact-us-main-container {
         flex-wrap: wrap;
+    }
+
+    .contact-us-social-media a {
+        font-size: 5vw;
+    }
+
+    .contact-us-social-media {
+        margin: 5vw 0;
+    }
+
+
+    .contact-us-whatsapp {
+        font-size: 5vw;
+        color: white;
     }
 
     .ips-contact-us-p {

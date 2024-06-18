@@ -108,9 +108,13 @@ li {
 }
 
 .spaces-box-title {
+    position: relative;
     font-size: 2vw;
-    margin: 2vw 0;
+    margin-top: -5vw;
+    margin-bottom: 3vw;
     color: #363636;
+    background-color: rgba(255, 239, 227, 0.83);
+    padding: 0.5vw 2vw;
 }
 
 .spaces-box-information {
@@ -372,7 +376,7 @@ li {
     }
 
     .spaces-box-title {
-        font-size: 2vw;
+        font-size: 1.7vw;
         width: 100%;
         text-align: center;
     }
@@ -507,8 +511,10 @@ li {
     }
 
     .spaces-box-title {
-        font-size: 5vw;
-        margin: 3vw 0;
+        font-size: 6vw;
+        margin-bottom: 7vw;
+        padding: 2vw 0;
+        margin-top: -15vw;
         width: 90%;
     }
 
@@ -522,6 +528,7 @@ li {
     .find-out-more {
         font-size: 3.6vw;
         font-weight: 600;
+        width: 26vw;
     }
 
     /* -------------------------------( main-content IPS Projects )------------------------------------------- */
